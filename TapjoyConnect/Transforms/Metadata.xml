@@ -1,0 +1,15 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.tapjoy']" name="managedName">Tapjoy</attr>
+  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyDailyRewardAdWebView']" />
+  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyFullScreenAdWebView']" />
+  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyDisplayAd']" />
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/field[@name='TAPJOY_CONNECT']" name="managedName">TAPJOY_CONNECT</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyVideo']/field[@name='TAPJOY_VIDEO']" name="managedName">TAPJOY_VIDEO</attr>
+</metadata>

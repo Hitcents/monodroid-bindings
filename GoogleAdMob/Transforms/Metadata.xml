@@ -1,0 +1,17 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+  <attr path="/api/package[@name='com.google.ads']" name="managedName">GoogleAdMob</attr>
+  <attr path="/api/package[@name='com.google.ads.doubleclick']" name="managedName">GoogleAdMob.DoubleClick</attr>
+  <attr path="/api/package[@name='com.google.ads.internal']" name="managedName">GoogleAdMob.Internal</attr>
+  <attr path="/api/package[@name='com.google.ads.mediation.admob']" name="managedName">GoogleAdMob.Mediation.AdMob</attr>
+  <attr path="/api/package[@name='com.google.ads.mediation.customevent']" name="managedName">GoogleAdMob.Mediation.CustomEvent</attr>
+  <attr path="/api/package[@name='com.google.ads.searchads']" name="managedName">GoogleAdMob.SearchAds</attr>
+  <attr path="/api/package[@name='com.google.ads.util']" name="managedName">GoogleAdMob.Util</attr>
+  <remove-node path="/api/package[@name='com.google.ads.mediation']" />
+</metadata>
