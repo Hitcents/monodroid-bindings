@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooglePlayBilling", "Google
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TapjoyConnect", "TapjoyConnect\TapjoyConnect.csproj", "{CE2FCC06-DB0F-4B7A-82D9-0F6BF46BF2A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Facebook", "Facebook\Facebook.csproj", "{49CE3648-7A6C-4C66-9D66-DDFE3C96CF54}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{CE2FCC06-DB0F-4B7A-82D9-0F6BF46BF2A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CE2FCC06-DB0F-4B7A-82D9-0F6BF46BF2A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CE2FCC06-DB0F-4B7A-82D9-0F6BF46BF2A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49CE3648-7A6C-4C66-9D66-DDFE3C96CF54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49CE3648-7A6C-4C66-9D66-DDFE3C96CF54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49CE3648-7A6C-4C66-9D66-DDFE3C96CF54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49CE3648-7A6C-4C66-9D66-DDFE3C96CF54}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
