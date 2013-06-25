@@ -42,9 +42,6 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <EmbeddedNativeLibrary Include="Jars\libchord.so">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedNativeLibrary>
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />
@@ -52,9 +49,12 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\chord-v1.0.0-20130327.jar">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </EmbeddedJar>
+    <EmbeddedJar Include="Jars\chord-v1.0.0-20130327.jar" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedNativeLibrary Include="Jars\libchord.so">
+      <Abi>armeabi</Abi>
+    </EmbeddedNativeLibrary>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
