@@ -19,7 +19,6 @@ namespace TestApplication
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            
             var manager = ChordManager.GetInstance(this);
             var d = manager.AvailableInterfaceTypes;
 

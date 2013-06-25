@@ -7,34 +7,22 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
-  <!--<attr path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']/method[@name='doInBackground']/parameter[@name='p0']"
-        name="type">
-    
-    java.lang.Object[]
-    
-  </attr>
+
+  <remove-node path="/api/package[@name='com.sec.android.ad.container']/class[@name='AdCarousel']" />
+  <remove-node path="/api/package[@name='com.sec.android.ad.container']/class[@name='AdText']" />
 
   <attr path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']/method[@name='doInBackground']"
-      name="visibility">
+        name="managedReturn">
 
-    public
+  Java.Lang.Object
 
-  </attr>-->
+  </attr>
 
-  <remove-node path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']" />
+  <attr path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']/method[@name='doInBackground']/parameter[@name='p0']"
+      name="managedType">
 
-  <!--<attr path="/api/package['@name='com.sec.android.ad.container']/class[@name='AdCarousel']"
-        name="">
-    
-    android.graphics
-    
-  </attr>-->
+    Java.Lang.Object[]
 
-  <!--<attr path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']/method[@name='doInBackground']"
-    name="">
-
-    true
-
-  </attr>-->
+  </attr>
 
 </metadata>
