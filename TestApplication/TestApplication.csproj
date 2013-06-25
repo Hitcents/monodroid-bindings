@@ -73,9 +73,17 @@
       <Project>{4ec38e57-b2f2-42c7-8a8c-af62ec114408}</Project>
       <Name>SamsungChord</Name>
     </ProjectReference>
+    <ProjectReference Include="..\SamsungInAppPurchase\SamsungIAP.csproj">
+      <Project>{4E4E227F-AFFA-48AE-9C21-079771C30015}</Project>
+      <Name>SamsungIAP</Name>
+    </ProjectReference>
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidJavaSource Include="IAPConnector.java" />
+    <AndroidJavaSource Include="IAPServiceCallback.java" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

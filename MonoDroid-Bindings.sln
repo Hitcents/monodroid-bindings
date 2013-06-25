@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonBilling", "AmazonBilling\AmazonBilling.csproj", "{F8541FAA-E0C7-406E-A11D-4CD7E8C69BBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAdMob", "GoogleAdMob\GoogleAdMob.csproj", "{D6827F85-B9C3-48AD-968D-53D1C259E5E7}"
@@ -16,6 +16,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamsungChord", "SamsungChord\SamsungChord.csproj", "{4EC38E57-B2F2-42C7-8A8C-AF62EC114408}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestApplication\TestApplication.csproj", "{DA664C54-1A2A-4DD5-8FE0-0CFFE8191547}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamsungIAP", "SamsungInAppPurchase\SamsungIAP.csproj", "{4E4E227F-AFFA-48AE-9C21-079771C30015}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +59,10 @@ Global
 		{DA664C54-1A2A-4DD5-8FE0-0CFFE8191547}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA664C54-1A2A-4DD5-8FE0-0CFFE8191547}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DA664C54-1A2A-4DD5-8FE0-0CFFE8191547}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

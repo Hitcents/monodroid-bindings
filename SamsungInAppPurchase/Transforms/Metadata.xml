@@ -1,0 +1,36 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.sec.android.iap']" name="managedName">SamsungIAP</attr>
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemList']/parameter[@name='p0']" name="name">mode</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemList']/parameter[@name='p1']" name="name">packageName</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemList']/parameter[@name='p2']" name="name">itemGroupId</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemList']/parameter[@name='p3']" name="name">startNum</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemList']/parameter[@name='p4']" name="name">endNum</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemList']/parameter[@name='p5']" name="name">itemType</attr>
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemsInbox']/parameter[@name='p0']" name="name">packageName</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemsInbox']/parameter[@name='p1']" name="name">itemGroupId</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemsInbox']/parameter[@name='p2']" name="name">startNum</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemsInbox']/parameter[@name='p3']" name="name">endNum</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemsInbox']/parameter[@name='p4']" name="name">startDate</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='getItemsInbox']/parameter[@name='p5']" name="name">endDate</attr>
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='requestCmd']/parameter[@name='p0']" name="name">callback</attr>
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='requestCmd']/parameter[@name='p1']" name="name">bundle</attr>
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='init']/parameter[@name='p0']" name="name">mode</attr>
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']/method[@name='unregisterCallback']/parameter[@name='p0']" name="name">callback</attr>
+
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPServiceCallback']/method[@name='responseCallback']/parameter[@name='p0']" name="name">bundle</attr>
+  
+</metadata>
