@@ -23,26 +23,28 @@
   <!--Not sure if this is right parameter-->
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='getNodeIpAddress']/parameter[@name='p0']" name="name">nodeName</attr>
   <!--Not sure if this is right parameter-->
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='isName']/parameter[@name='p0']" name="name">nodeName</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='isName']/parameter[@name='p0']" name="name">channelName</attr>
   <!--Not sure if this is right parameter-->
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='rejectFile']/parameter[@name='p0']" name="name">nodeName</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='rejectFile']/parameter[@name='p0']" name="name">exchangeId</attr>
 
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p0']" name="name">toChannel</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p1']" name="name">nodeName</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p2']" name="name">buffer</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p0']" name="name">toNode</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p1']" name="name">payloadType</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p2']" name="name">payload</attr>
 
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendDataToAll']/parameter[@name='p0']" name="name">toChannel</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendDataToAll']/parameter[@name='p1']" name="name">buffer</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendDataToAll']/parameter[@name='p0']" name="name">payloadType</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendDataToAll']/parameter[@name='p1']" name="name">payload</attr>
 
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p0']" name="name">toChannel</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p1']" name="name">strFilePath</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p2']" name="name">toNode</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p3']" name="name">timeoutMillis</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p0']" name="name">toNode</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p1']" name="name">fileType</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p2']" name="name">filePath</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendFile']/parameter[@name='p3']" name="name">timeoutMsec</attr>
   
   <!--IChordChannelListener-->
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannelListener']/method[@name='onDataReceived']/parameter[@name='p0']" name="name">fromNode</attr>
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannelListener']/method[@name='onDataReceived']/parameter[@name='p1']" name="name">fromChannel</attr>
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannelListener']/method[@name='onDataReceived']/parameter[@name='p2']" name="name">payloadType</attr>
+  <!--THIS IS A HACK - requires manual code changes in generated code-->
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannelListener']/method[@name='onDataReceived']/parameter[@name='p3']" name="managedType">IntPtr</attr>
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannelListener']/method[@name='onDataReceived']/parameter[@name='p3']" name="name">payload</attr>
 
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannelListener']/method[@name='onFileChunkReceived']/parameter[@name='p0']" name="name">fromNode</attr>
