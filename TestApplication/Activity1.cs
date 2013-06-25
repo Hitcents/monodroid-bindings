@@ -7,6 +7,7 @@ using Android.Widget;
 using Android.OS;
 using SamsungChord;
 using SamsungIAP;
+//using SamsungAdHub;
 
 namespace TestApplication
 {
@@ -18,8 +19,9 @@ namespace TestApplication
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-
+            
             var manager = ChordManager.GetInstance(this);
+            var d = manager.AvailableInterfaceTypes;
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);

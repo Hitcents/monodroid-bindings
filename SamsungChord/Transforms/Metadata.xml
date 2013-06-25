@@ -22,17 +22,14 @@
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='acceptFile']/parameter[@name='p3']" name="name">chunkSize</attr>
   <!--Not sure if this is right parameter-->
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='getNodeIpAddress']/parameter[@name='p0']" name="name">nodeName</attr>
-
-  <!--Rest of IChordChannel-->
   <!--Not sure if this is right parameter-->
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='isName']/parameter[@name='p0']" name="name">nodeName</attr>
-
   <!--Not sure if this is right parameter-->
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='rejectFile']/parameter[@name='p0']" name="name">nodeName</attr>
 
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p0']" name="name">toChannel</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p1']" name="name">buffer</attr>
-  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p2']" name="name">nodeName</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p1']" name="name">nodeName</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendData']/parameter[@name='p2']" name="name">buffer</attr>
 
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendDataToAll']/parameter[@name='p0']" name="name">toChannel</attr>
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordChannel']/method[@name='sendDataToAll']/parameter[@name='p1']" name="name">buffer</attr>
@@ -110,4 +107,22 @@
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordManagerListener']/method[@name='onStarted']/parameter[@name='p0']" name="name">name</attr>
   <attr path="/api/package[@name='com.samsung.chord']/interface[@name='IChordManagerListener']/method[@name='onStarted']/parameter[@name='p1']" name="name">reason</attr>
 
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='getJoinedChannel']/parameter[@name='p0']" name="name">channelName</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='joinChannel']/parameter[@name='p0']" name="name">channelName</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='joinChannel']/parameter[@name='p1']" name="name">listener</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='leaveChannel']/parameter[@name='p0']" name="name">channelName</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='setHandleEventLooper']/parameter[@name='p0']" name="name">looper</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='setNetworkListener']/parameter[@name='p0']" name="name">listener</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='setNodeKeepAliveTimeout']/parameter[@name='p0']" name="name">timeoutMsec</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='setTempDirectory']/parameter[@name='p0']" name="name">tmpDirPath</attr>
+
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='start']/parameter[@name='p0']" name="name">interfaceType</attr>
+  <attr path="/api/package[@name='com.samsung.chord']/class[@name='ChordManager']/method[@name='start']/parameter[@name='p1']" name="name">listener</attr>
+  
 </metadata>

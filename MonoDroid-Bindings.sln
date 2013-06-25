@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestApplication", "TestAppl
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamsungIAP", "SamsungInAppPurchase\SamsungIAP.csproj", "{4E4E227F-AFFA-48AE-9C21-079771C30015}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamsungAdHub", "SamsungAdHub\SamsungAdHub.csproj", "{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4E4E227F-AFFA-48AE-9C21-079771C30015}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
