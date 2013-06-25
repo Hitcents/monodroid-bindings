@@ -7,14 +7,15 @@ using Android.Widget;
 using Android.OS;
 using SamsungChord;
 using SamsungIAP;
-//using SamsungAdHub;
+using Com.Sec.Android.AD;
+using Com.Sec.Android.Tracking;
+using Com.Ormma.Controller.Util;
 
 namespace TestApplication
 {
     [Activity(Label = "TestApplication", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity, IAPServiceCallback, IAPConnector
     {
-        int count = 1;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -25,11 +26,6 @@ namespace TestApplication
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
 
-            // Get our button from the layout resource,
-            // and attach an event to it
-            Button button = FindViewById<Button>(Resource.Id.MyButton);
-
-            button.Click += delegate { button.Text = string.Format("{0} clicks!", count++); };
         }
 
         public Bundle GetItemList(int mode, string packageName, string itemGroupId, int startNum, int endNum, string itemType)

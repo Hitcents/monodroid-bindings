@@ -69,6 +69,10 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SamsungAdHub\SamsungAdHub.csproj">
+      <Project>{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}</Project>
+      <Name>SamsungAdHub</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SamsungChord\SamsungChord.csproj">
       <Project>{4ec38e57-b2f2-42c7-8a8c-af62ec114408}</Project>
       <Name>SamsungChord</Name>

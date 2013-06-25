@@ -13,16 +13,12 @@
 
   <attr path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']/method[@name='doInBackground']"
         name="managedReturn">
-
   Java.Lang.Object
-
   </attr>
 
   <attr path="/api/package[@name='com.sec.android.ad.util']/class[@name='AsyncLoadImage']/method[@name='doInBackground']/parameter[@name='p0']"
       name="managedType">
-
     Java.Lang.Object[]
-
   </attr>
 
 </metadata>
