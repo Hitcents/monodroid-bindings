@@ -5,11 +5,12 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
-using SamsungChord;
+//using SamsungChord;
 using SamsungIAP;
 using Com.Sec.Android.AD;
 using Com.Sec.Android.Tracking;
 using Com.Ormma.Controller.Util;
+using GooglePlayServices = Com.Google.Android.Gms;
 
 namespace TestApplication
 {
@@ -20,9 +21,8 @@ namespace TestApplication
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            var manager = ChordManager.GetInstance(this);
-            var d = manager.AvailableInterfaceTypes;
-
+            //var manager = ChordManager.GetInstance(this);
+            //var d = manager.AvailableInterfaceTypes;
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
         }

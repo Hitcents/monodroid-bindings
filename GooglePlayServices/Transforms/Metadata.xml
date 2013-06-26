@@ -1,0 +1,102 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <!--Not working for some reason-->
+  <attr path="/api/package[@name='com.google.android.gms']" name="managedName">GooglePlayServices</attr>
+  
+
+  <attr path="/api/package[@name='com.google.android.gms.plus.model.people']/class[@name='PersonBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.plus.model.moments']/class[@name='MomentBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='VisibleRegionCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='VisibleRegionCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='TileOverlayOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='TileOverlayOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='TileCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='TileCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='PolylineOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='PolylineOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='PolygonOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='PolygonOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='MarkerOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='MarkerOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='LatLngCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='LatLngCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='LatLngBoundsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='LatLngBoundsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='GroundOverlayOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='GroundOverlayOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='CircleOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='CircleOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='CameraPositionCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']/class[@name='CameraPositionCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps']/class[@name='GoogleMapOptionsCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.maps']/class[@name='GoogleMapOptionsCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.location']/class[@name='LocationRequestCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.location']/class[@name='LocationRequestCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.location']/class[@name='DetectedActivityCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.location']/class[@name='DetectedActivityCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.location']/class[@name='ActivityRecognitionResultCreator']/method[@name='newArray']" name="managedReturn">Java.Lang.Object[]</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.location']/class[@name='ActivityRecognitionResultCreator']/method[@name='createFromParcel']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games']/class[@name='PlayerEntity']/method[@name='freeze']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games']/class[@name='PlayerBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RoomEntity']/method[@name='freeze']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer']/class[@name='ParticipantEntity']/method[@name='freeze']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer']/class[@name='ParticipantBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer']/class[@name='InvitationEntity']/method[@name='freeze']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games.leaderboard']/class[@name='LeaderboardScoreBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games']/class[@name='GameEntity']/method[@name='freeze']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games']/class[@name='GameBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.games.achievement']/class[@name='AchievementBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+  <attr path="/api/package[@name='com.google.android.gms.appstate']/class[@name='AppStateBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
+
+
+</metadata>

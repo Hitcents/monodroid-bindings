@@ -72,13 +72,13 @@
     <TransformFile Include="Properties\AndroidManifest.xml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\GooglePlayServices\GooglePlayServices.csproj">
+      <Project>{FCCAF939-0B17-44DC-99F4-883593EAC019}</Project>
+      <Name>GooglePlayServices</Name>
+    </ProjectReference>
     <ProjectReference Include="..\SamsungAdHub\SamsungAdHub.csproj">
       <Project>{64FCC200-C9BD-4637-BBAA-C58AE64FD7A7}</Project>
       <Name>SamsungAdHub</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\SamsungChord\SamsungChord.csproj">
-      <Project>{4EC38E57-B2F2-42C7-8A8C-AF62EC114408}</Project>
-      <Name>SamsungChord</Name>
     </ProjectReference>
     <ProjectReference Include="..\SamsungInAppPurchase\SamsungIAP.csproj">
       <Project>{4E4E227F-AFFA-48AE-9C21-079771C30015}</Project>
