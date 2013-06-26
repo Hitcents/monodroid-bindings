@@ -25,7 +25,6 @@ namespace TestApplication
 
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.Main);
-
         }
 
         public Bundle GetItemList(int mode, string packageName, string itemGroupId, int startNum, int endNum, string itemType)

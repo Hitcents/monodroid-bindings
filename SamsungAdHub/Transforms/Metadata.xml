@@ -1,3 +1,4 @@
+
 <metadata>
   <!--
   This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
@@ -20,5 +21,92 @@
       name="managedType">
     Java.Lang.Object[]
   </attr>
+
+
+  <attr path="/api/package[@name='com.sec.android.ad']/interface[@name='AdHubView.TimerListener']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/interface[@name='TimerListener']" name="visibility">public</attr>
+
+  
+  <!-- if we dont need TimerListener-->
+  <remove-node path="/api/package[@name='com.sec.android.ad']/interface[@name='AdHubView.TimerListener']" />
+  
+  <!-- in case we need TimerListener
+  <attr
+        path="/api/package[@name='com.sec.android.ad.state']/interface[@name='AdHubView.TimerListener']"
+        name="managedName"
+  >IAdHubViewTimerListenerSupport</attr>
+  -->
+
+
+  <attr path="/api/package[@name='com.sec.android.ad.info']/class[@name='AdSize']/method[@name='valueOf']/parameter[@name='p0']" name="name">name</attr>
+  
+  <attr path="/api/package[@name='com.sec.android.ad.targeting']/class[@name='UserProfile']/method[@name='setAge']/parameter[@name='p0']" name="name">age</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.targeting']/class[@name='UserProfile']/method[@name='setGender']/parameter[@name='p0']" name="name">gender</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.targeting']/class[@name='UserProfile']/method[@name='setInterests']/parameter[@name='p0']" name="name">interests</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='setListener']/parameter[@name='p0']" name="name">videoListener</attr>
+  
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='setLocation']/parameter[@name='p0']" name="name">latitude</attr>\
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='setLocation']/parameter[@name='p1']" name="name">longitude</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='setLocation']/parameter[@name='p2']" name="name">altitude</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='setUserProfile']/parameter[@name='p0']" name="name">profile</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='startAdOverlay']/parameter[@name='p0']" name="name">videoContentUrl</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='startAdOverlay']/parameter[@name='p1']" name="name">title</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='startAdOverlay']/parameter[@name='p2']" name="name">adSize</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='startAdPreRoll']/parameter[@name='p0']" name="name">videoContentURl</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdHubVideoPlayer']/method[@name='startAdPreRoll']/parameter[@name='p1']" name="name">title</attr>
+
+
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdVideoListener']/method[@name='onAdVideoFailed']/parameter[@name='p0']" name="name">e</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.vast']/class[@name='AdVideoListener']/method[@name='onContentVideoFailed']/parameter[@name='p0']" name="name">e</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubInterstitial']/method[@name='setListener']/parameter[@name='p0']" name="name">interstitialListener</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubInterstitial']/method[@name='setLocation']/parameter[@name='p0']" name="name">latitude</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubInterstitial']/method[@name='setLocation']/parameter[@name='p1']" name="name">longitude</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubInterstitial']/method[@name='setLocation']/parameter[@name='p2']" name="name">altitude</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubInterstitial']/method[@name='setUserProfile']/parameter[@name='p0']" name="name">profile</attr>
+
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='init']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='init']/parameter[@name='p1']" name="name">inventoryID</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='init']/parameter[@name='p2']" name="name">adSize</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='onWindowFocusChanged']/parameter[@name='p0']" name="name">hasWindowFocus</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setListener']/parameter[@name='p0']" name="name">listener</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setLocation']/parameter[@name='p0']" name="name">latitude</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setLocation']/parameter[@name='p1']" name="name">longitude</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setLocation']/parameter[@name='p2']" name="name">altitude</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setProgressBarVisibility']/parameter[@name='p0']" name="name">visible</attr>
+  
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setRefreshRate']/parameter[@name='p0']" name="name">milliseconds</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setTextAdBackgroundGradient']/parameter[@name='p0']" name="name">top</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setTextAdBackgroundGradient']/parameter[@name='p1']" name="name">bottom</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setTextAdTextColor']/parameter[@name='p0']" name="name">color</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setThreadPriority']/parameter[@name='p0']" name="name">priority</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdHubView']/method[@name='setUserProfile']/parameter[@name='p0']" name="name">profile</attr>
+
+  
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdInterstitialListener']/method[@name='onAdInterstitialClosed']/parameter[@name='p0']" name="name">adHubInterstitial</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdInterstitialListener']/method[@name='onAdInterstitialFailed']/parameter[@name='p0']" name="name">adHubInterstitial</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdInterstitialListener']/method[@name='onAdInterstitialFailed']/parameter[@name='p1']" name="name">e</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdInterstitialListener']/method[@name='onAdInterstitialReceived']/parameter[@name='p0']" name="name">adHubInterstitial</attr>
+
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdNotificationListener']/method[@name='onAdFailed']/parameter[@name='p0']" name="name">adHubView</attr>
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdNotificationListener']/method[@name='onAdFailed']/parameter[@name='p1']" name="name">exception</attr>
+
+  <attr path="/api/package[@name='com.sec.android.ad']/class[@name='AdNotificationListener']/method[@name='onAdReceived']/parameter[@name='p0']" name="name">adHubView</attr>
 
 </metadata>
