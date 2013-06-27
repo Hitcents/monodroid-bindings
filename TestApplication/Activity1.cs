@@ -10,7 +10,6 @@ using SamsungIAP;
 using Com.Sec.Android.AD;
 using Com.Sec.Android.Tracking;
 using Com.Ormma.Controller.Util;
-using GooglePlayServices = Com.Google.Android.Gms;
 
 namespace TestApplication
 {

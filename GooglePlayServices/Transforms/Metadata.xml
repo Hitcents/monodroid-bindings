@@ -8,7 +8,7 @@
   -->
 
   <!--Not working for some reason-->
-  <attr path="/api/package[@name='com.google.android.gms']" name="managedName">GooglePlayServices</attr>
+  <!--<attr path="/api/package[@name='com.google.android.gms']" name="managedName">GooglePlayServices</attr>-->
   
 
   <attr path="/api/package[@name='com.google.android.gms.plus.model.people']/class[@name='PersonBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
@@ -96,6 +96,7 @@
   <attr path="/api/package[@name='com.google.android.gms.games.achievement']/class[@name='AchievementBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
 
   <attr path="/api/package[@name='com.google.android.gms.appstate']/class[@name='AppStateBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
+
 
 
 
