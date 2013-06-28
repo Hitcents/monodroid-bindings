@@ -8,7 +8,32 @@
   -->
 
   <!--Not working for some reason-->
-  <!--<attr path="/api/package[@name='com.google.android.gms']" name="managedName">GooglePlayServices</attr>-->
+  <attr path="/api/package[@name='com.google.android.gms.common']" name="managedName">Play.Common</attr>
+  <attr path="/api/package[@name='com.google.android.gms.common.data']" name="managedName">Play.Common.Data</attr>
+  <attr path="/api/package[@name='com.google.android.gms.common.images']" name="managedName">Play.Common.Images</attr>
+  <attr path="/api/package[@name='com.google.android.gms.gcm']" name="managedName">Play.Gcm</attr>
+  <attr path="/api/package[@name='com.google.android.gms.Location']" name="managedName">Play.Location</attr>
+  <attr path="/api/package[@name='com.google.android.gms.appstate']" name="managedName">Play.Appstate</attr>
+  <attr path="/api/package[@name='com.google.android.gms.auth']" name="managedName">Play.Auth</attr>
+  <attr path="/api/package[@name='com.google.android.gms.maps']" name="managedName">Play.Maps</attr>
+  <attr path="/api/package[@name='com.google.android.gms.location']" name="managedName">Play.Location</attr>
+  <attr path="/api/package[@name='com.google.android.gms.maps.internal']" name="managedName">Play.Maps.Internal</attr>
+  <attr path="/api/package[@name='com.google.android.gms.maps.model']" name="managedName">Play.Maps.Model</attr>
+  <attr path="/api/package[@name='com.google.android.gms.maps.model.internal']" name="managedName">Play.Maps.Model.Internal</attr>
+  <attr path="/api/package[@name='com.google.android.gms.panorama']" name="managedName">Play.Panorama</attr>
+  <attr path="/api/package[@name='com.google.android.gms.plus.model.moments']" name="managedName">Play.Plus.Model.Moments</attr>
+  <attr path="/api/package[@name='com.google.android.gms.plus.model.people']" name="managedName">Play.Plus.Model.People</attr>
+  
+  
+  <attr path="/api/package[@name='com.google.android.gms.appstate']" name="managedName">Play.Appstate</attr>
+  <attr path="/api/package[@name='com.google.android.gms.dynamic']" name="managedName">Play.Dynamic</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.achievement']" name="managedName">Play.Games.Achievement</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.leaderboard']" name="managedName">Play.Games.Leaderboard</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer']" name="managedName">Play.Games.Multiplayer</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games']" name="managedName">Play.Games</attr>
+  <attr path="/api/package[@name='com.google.android.gms.plus']" name="managedName">Play.Plus</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']" name="managedName">Play.Games.Multiplayer.Realtime</attr>
+  
   
 
   <attr path="/api/package[@name='com.google.android.gms.plus.model.people']/class[@name='PersonBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>

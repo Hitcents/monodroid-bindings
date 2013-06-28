@@ -51,9 +51,6 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedReferenceJar Include="Jars\google_play.jar" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedJar Include="Jars\google-play-services.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
