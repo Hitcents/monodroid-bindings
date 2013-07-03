@@ -8,4 +8,169 @@
   -->
   <attr path="/api/package[@name='com.google.analytics.tracking.android']" name="managedName">GoogleAnalytics</attr>
   <attr path="/api/package[@name='com.google.analytics.tracking.android']/interface[@name='TrackerHandler']" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='CampaignTrackingReceiver']/method[@name='onReceive']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='CampaignTrackingReceiver']/method[@name='onReceive']/parameter[@name='p1']" name="name">intent</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='CampaignTrackingService']/constructor[@name='CampaignTrackingService']/parameter[@name='p0']" name="name">name</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='EasyTracker']/method[@name='activityStart']/parameter[@name='p0']" name="name">activity</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='EasyTracker']/method[@name='activityStop']/parameter[@name='p0']" name="name">activity</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='EasyTracker']/method[@name='setContext']/parameter[@name='p0']" name="name">context</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/interface[@name='ExceptionParser']/method[@name='getDescription']/parameter[@name='p0']" name="name">threadName</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/interface[@name='ExceptionParser']/method[@name='getDescription']/parameter[@name='p1']" name="name">throwable</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/constructor[@name='ExceptionReporter']/parameter[@name='p0']" name="name">tracker</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/constructor[@name='ExceptionReporter']/parameter[@name='p1']" name="name">serviceManager</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/constructor[@name='ExceptionReporter']/parameter[@name='p2']" name="name">originalHandler</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/constructor[@name='ExceptionReporter']/parameter[@name='p3']" name="name">context</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/method[@name='setExceptionParser']/parameter[@name='p0']" name="name">exceptionParser</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/method[@name='uncaughtException']/parameter[@name='p0']" name="name">t</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='ExceptionReporter']/method[@name='uncaughtException']/parameter[@name='p1']" name="name">e</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GAServiceManager']/method[@name='setDispatchPeriod']/parameter[@name='p0']" name="name">dispatchPeriodInSeconds</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GAServiceManager']/method[@name='updateConnectivityStatus']/parameter[@name='p0']" name="name">connected</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/interface[@name='GoogleAnalytics.AppOptOutCallback']/method[@name='reportAppOptOut']/parameter[@name='p0']" name="name">optOut</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='closeTracker']/parameter[@name='p0']" name="name">tracker</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='getInstance']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='getTracker']/parameter[@name='p0']" name="name">trackingId</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='requestAppOptOut']/parameter[@name='p0']" name="name">optOut</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='sendHit']/parameter[@name='p0']" name="name">hit</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='setAppOptOut']/parameter[@name='p0']" name="name">optOut</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='setDebug']/parameter[@name='p0']" name="name">debug</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='GoogleAnalytics']/method[@name='setDefaultTracker']/parameter[@name='p0']" name="name">tracker</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='d']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='dDebug']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='e']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='eDebug']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='i']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='iDebug']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='setDebug']/parameter[@name='p0']" name="name">debug</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='v']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='vDebug']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='w']/parameter[@name='p0']" name="name">msg</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Log']/method[@name='wDebug']/parameter[@name='p0']" name="name">msg</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/interface[@name='ServiceManager']/method[@name='setDispatchPeriod']/parameter[@name='p0']" name="name">dispatchPeriodInSeconds</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/interface[@name='ServiceManager']/method[@name='updateConnectivityStatus']/parameter[@name='p0']" name="name">connected</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='StandardExceptionParser']/method[@name='getDescription']/parameter[@name='p0']" name="name">threadName</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='StandardExceptionParser']/method[@name='getDescription']/parameter[@name='p1']" name="name">throwable</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='StandardExceptionParser']/method[@name='setIncludedPackages']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='StandardExceptionParser']/method[@name='setIncludedPackages']/parameter[@name='p1']" name="name">additionalPackages</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructEvent']/parameter[@name='p0']" name="name">category</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructEvent']/parameter[@name='p1']" name="name">action</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructEvent']/parameter[@name='p2']" name="name">label</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructEvent']/parameter[@name='p3']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructException']/parameter[@name='p0']" name="name">exceptionDescription</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructException']/parameter[@name='p1']" name="name">fatal</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructRawException']/parameter[@name='p0']" name="name">threadName</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructRawException']/parameter[@name='p1']" name="name">exception</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructRawException']/parameter[@name='p2']" name="name">fatal</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructSocial']/parameter[@name='p0']" name="name">network</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructSocial']/parameter[@name='p1']" name="name">action</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructSocial']/parameter[@name='p2']" name="name">target</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructTiming']/parameter[@name='p0']" name="name">category</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructTiming']/parameter[@name='p1']" name="name">intervalMillis</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructTiming']/parameter[@name='p2']" name="name">name</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructTiming']/parameter[@name='p3']" name="name">label</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='constructTransaction']/parameter[@name='p0']" name="name">trans</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='get']/parameter[@name='p0']" name="name">key</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='send']/parameter[@name='p0']" name="name">hitType</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='send']/parameter[@name='p1']" name="name">params</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendEvent']/parameter[@name='p0']" name="name">category</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendEvent']/parameter[@name='p1']" name="name">action</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendEvent']/parameter[@name='p2']" name="name">label</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendEvent']/parameter[@name='p3']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendException']/parameter[@name='p0' and @type='java.lang.String']" name="name">description</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendException']/parameter[@name='p1' and @type='java.lang.Throwable']" name="name">exception</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendException']/parameter[@name='p1' and @type='boolean']" name="name">fatal</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendException']/parameter[@name='p2']" type="boolean" name="name">fatal</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendSocial']/parameter[@name='p0']" name="name">network</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendSocial']/parameter[@name='p1']" name="name">action</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendSocial']/parameter[@name='p2']" name="name">target</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendTiming']/parameter[@name='p0']" name="name">category</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendTiming']/parameter[@name='p1']" name="name">intervalMillis</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendTiming']/parameter[@name='p2']" name="name">name</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendTiming']/parameter[@name='p3']" name="name">label</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendTransaction']/parameter[@name='p0']" name="name">transaction</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='sendView']/parameter[@name='p0']" name="name">appScreen</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='set']/parameter[@name='p0']" name="name">key</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='set']/parameter[@name='p1']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setAnonymizeIp']/parameter[@name='p0']" name="name">anonymizeIp</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setAppId']/parameter[@name='p0']" name="name">appId</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setAppInstallerId']/parameter[@name='p0']" name="name">appInstallerId</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setAppName']/parameter[@name='p0']" name="name">appName</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setAppScreen']/parameter[@name='p0']" name="name">appScreen</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setAppVersion']/parameter[@name='p0']" name="name">appVersion</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCampaign']/parameter[@name='p0']" name="name">campaign</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCustomDimension']/parameter[@name='p0']" name="name">index</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCustomDimension']/parameter[@name='p1']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCustomDimensionsAndMetrics']/parameter[@name='p0']" name="name">dimensions</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCustomDimensionsAndMetrics']/parameter[@name='p1']" name="name">metrics</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCustomMetric']/parameter[@name='p0']" name="name">index</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setCustomMetric']/parameter[@name='p1']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setExceptionParser']/parameter[@name='p0']" name="name">exceptionParser</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setReferrer']/parameter[@name='p0']" name="name">referrer</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setSampleRate']/parameter[@name='p0']" name="name">sampleRate</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setStartSession']/parameter[@name='p0']" name="name">startSession</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setThrottlingEnabled']/parameter[@name='p0']" name="name">throttlingEnabled</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Tracker']/method[@name='setUseSecure']/parameter[@name='p0']" name="name">useSecure</attr>-->
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Builder']/constructor[@name='Transaction.Builder']/parameter[@name='p0']" name="name">transactionId</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Builder']/constructor[@name='Transaction.Builder']/parameter[@name='p1']" name="name">totalCostInMicros</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Builder']/method[@name='setAffiliation']/parameter[@name='p0']" name="name">affiliation</attr>
+  
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Builder']/method[@name='setCurrencyCode']/parameter[@name='p0']" name="name">currencyCode</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Builder']/method[@name='setShippingCostInMicros']/parameter[@name='p0']" name="name">shippingCostInMicros</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Builder']/method[@name='setTotalTaxInMicros']/parameter[@name='p0']" name="name">totalTaxInMicros</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction']/method[@name='addItem']/parameter[@name='p0']" name="name">item</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Item.Builder']/constructor[@name='Transaction.Item.Builder']/parameter[@name='p0']" name="name">SKU</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Item.Builder']/constructor[@name='Transaction.Item.Builder']/parameter[@name='p1']" name="name">name</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Item.Builder']/constructor[@name='Transaction.Item.Builder']/parameter[@name='p2']" name="name">priceInMicros</attr>
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Item.Builder']/constructor[@name='Transaction.Item.Builder']/parameter[@name='p3']" name="name">quantity</attr>
+
+  <attr path="/api/package[@name='com.google.analytics.tracking.android']/class[@name='Transaction.Item.Builder']/method[@name='setProductCategory']/parameter[@name='p0']" name="name">productCategory</attr>
+  
 </metadata>
