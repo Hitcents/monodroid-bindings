@@ -14,4 +14,75 @@
   <attr path="/api/package[@name='com.google.ads.searchads']" name="managedName">GoogleAdMob.SearchAds</attr>
   <attr path="/api/package[@name='com.google.ads.util']" name="managedName">GoogleAdMob.Util</attr>
   <remove-node path="/api/package[@name='com.google.ads.mediation']" />
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/constructor[@name='AdView']/parameter[@name='p0' and @type='android.content.Context']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/constructor[@name='AdView']/parameter[@name='p1' and @type='android.util.AttributeSet']" name="name">attrs</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/constructor[@name='AdView']/parameter[@name='p0' and @type='android.app.Activity']" name="name">activity</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/constructor[@name='AdView']/parameter[@name='p1' and @type='com.google.ads.AdSize']" name="name">adSize</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/constructor[@name='AdView']/parameter[@name='p2' and @type='int']" name="name">defStyle</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/constructor[@name='AdView']/parameter[@name='p2' and @type='java.lang.String']" name="name">adUnitId</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/method[@name='loadAd']/parameter[@name='p0']" name="name">adRequest</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdView']/method[@name='setAdListener']/parameter[@name='p0']" name="name">adListener</attr>
+
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='InterstitialAd']/constructor[@name='InterstitialAd']/parameter[@name='p0']" name="name">activity</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='InterstitialAd']/constructor[@name='InterstitialAd']/parameter[@name='p1']" name="name">adUnitId</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='InterstitialAd']/constructor[@name='InterstitialAd']/parameter[@name='p2']" name="name">shortTimeout</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='InterstitialAd']/method[@name='loadAd']/parameter[@name='p0']" name="name">adRequest</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='InterstitialAd']/method[@name='setAdListener']/parameter[@name='p0']" name="name">adListener</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='Ad']/method[@name='loadAd']/parameter[@name='p0']" name="name">adRequest</attr>
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='Ad']/method[@name='setAdListener']/parameter[@name='p0']" name="name">adListener</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='AdListener']/method[@name='onDismissScreen']/parameter[@name='p0']" name="name">ad</attr>
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='AdListener']/method[@name='onFailedToReceiveAd']/parameter[@name='p0']" name="name">ad</attr>
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='AdListener']/method[@name='onFailedToReceiveAd']/parameter[@name='p1']" name="name">error</attr>
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='AdListener']/method[@name='onLeaveApplication']/parameter[@name='p0']" name="name">ad</attr>
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='AdListener']/method[@name='onPresentScreen']/parameter[@name='p0']" name="name">ad</attr>
+  <attr path="/api/package[@name='com.google.ads']/interface[@name='AdListener']/method[@name='onReceiveAd']/parameter[@name='p0']" name="name">ad</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addExtra']/parameter[@name='p0']" name="name">key</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addExtra']/parameter[@name='p1']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addKeyword']/parameter[@name='p0']" name="name">keyword</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addKeywords']/parameter[@name='p0']" name="name">keywords</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addMediationExtra']/parameter[@name='p0']" name="name">key</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addMediationExtra']/parameter[@name='p1']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='addTestDevice']/parameter[@name='p0']" name="name">testDevice</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='getNetworkExtras']/parameter[@name='p0']" name="name">extrasClass</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='getRequestMap']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='isTestDevice']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='removeNetworkExtras']/parameter[@name='p0']" name="name">extrasClass</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setBirthday']/parameter[@name='p0' and @type='java.util.Calendar']" name="name">calendar</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setBirthday']/parameter[@name='p0' and @type='java.util.Date']" name="name">birthday</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setGender']/parameter[@name='p0']" name="name">gender</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setKeywords']/parameter[@name='p0']" name="name">keywords</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setLocation']/parameter[@name='p0']" name="name">location</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setMediationExtras']/parameter[@name='p0']" name="name">mediationExtras</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setNetworkExtras']/parameter[@name='p0']" name="name">extras</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdRequest']/method[@name='setTestDevices']/parameter[@name='p0']" name="name">testDevices</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/constructor[@name='AdSize']/parameter[@name='p0']" name="name">width</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/constructor[@name='AdSize']/parameter[@name='p1']" name="name">height</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='createAdSize']/parameter[@name='p0']" name="name">adSize</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='createAdSize']/parameter[@name='p1']" name="name">context</attr>
+  
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='findBestSize']/parameter[@name='p0']" name="name">options</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='getHeightInPixels']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='getWidthInPixels']/parameter[@name='p0']" name="name">context</attr>
+
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='isSizeAppropriate']/parameter[@name='p0']" name="name">width</attr>
+  <attr path="/api/package[@name='com.google.ads']/class[@name='AdSize']/method[@name='isSizeAppropriate']/parameter[@name='p1']" name="name">height</attr>
+
 </metadata>
