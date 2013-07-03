@@ -12,4 +12,122 @@
   <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyDisplayAd']" />
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/field[@name='TAPJOY_CONNECT']" name="managedName">TAPJOY_CONNECT</attr>
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyVideo']/field[@name='TAPJOY_VIDEO']" name="managedName">TAPJOY_VIDEO</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponse']/parameter[@name='p0']" name="name">currencyName</attr>
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponse']/parameter[@name='p1']" name="name">pointTotal</attr>
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponseFailed']/parameter[@name='p0']" name="name">error</attr>
+
+  
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='actionComplete']/parameter[@name='p0']" name="name">actionID</attr>
+  
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='awardTapPoints']/parameter[@name='p0']" name="name">amount</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='awardTapPoints']/parameter[@name='p1']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enableBannerAdAutoRefresh']/parameter[@name='p0']" name="name">shouldAutoRefresh</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enableLogging']/parameter[@name='p0']" name="name">enable</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enablePaidAppWithActionID']/parameter[@name='p0']" name="name">paidAppPayPerActionID</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enableVideoCache']/parameter[@name='p0']" name="name">enable</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDailyRewardAd']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDailyRewardAdWithCurrencyID']/parameter[@name='p0']" name="name">currencyID</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDailyRewardAdWithCurrencyID']/parameter[@name='p1']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDisplayAd']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDisplayAdWithCurrencyID']/parameter[@name='p0']" name="name">currencyID</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDisplayAdWithCurrencyID']/parameter[@name='p1']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getFullScreenAd']/parameter[@name='p0']" name="name">notifier</attr>
+  
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getFullScreenAdWithCurrencyID']/parameter[@name='p0']" name="name">currencyID</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getFullScreenAdWithCurrencyID']/parameter[@name='p1']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getTapPoints']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='initVideoAd']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p0']" name="name">context</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p1']" name="name">appID</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p2']" name="name">secretKey</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p3']" name="name">flags</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p4']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='sendIAPEvent']/parameter[@name='p0']" name="name">name</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='sendIAPEvent']/parameter[@name='p1']" name="name">price</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='sendIAPEvent']/parameter[@name='p2']" name="name">quantity</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='sendIAPEvent']/parameter[@name='p3']" name="name">currencyCode</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setCurrencyMultiplier']/parameter[@name='p0']" name="name">multiplier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setDisplayAdSize']/parameter[@name='p0']" name="name">dimensions</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setEarnedPointsNotifier']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setFlagKeyValue']/parameter[@name='p0']" name="name">key</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setFlagKeyValue']/parameter[@name='p1']" name="name">value</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setTapjoyViewNotifier']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setUserID']/parameter[@name='p0']" name="name">userID</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setVideoCacheCount']/parameter[@name='p0']" name="name">count</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setVideoNotifier']/parameter[@name='p0']" name="name">notifier</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='showOffersWithCurrencyID']/parameter[@name='p0']" name="name">currencyID</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='showOffersWithCurrencyID']/parameter[@name='p1']" name="name">enableCurrencySelector</attr>
+
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyEarnedPointsNotifier']/method[@name='earnedTapPoints']/parameter[@name='p0']" name="name">enableCurrencySelector</attr>
+
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyFullScreenAdNotifier']/method[@name='getFullScreenAdResponseFailed']/parameter[@name='p0']" name="name">error</attr>
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyFeaturedAppNotifier']/method[@name='getFeaturedAppResponse']/parameter[@name='p0']" name="name">featuredAppObject</attr>
+
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='d']/parameter[@name='p0']" name="name">tag</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='d']/parameter[@name='p1']" name="name">msg</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='e']/parameter[@name='p0']" name="name">tag</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='e']/parameter[@name='p1']" name="name">msg</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='enableLogging']/parameter[@name='p0']" name="name">enable</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='i']/parameter[@name='p0']" name="name">tag</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='i']/parameter[@name='p1']" name="name">msg</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='v']/parameter[@name='p0']" name="name">tag</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='v']/parameter[@name='p1']" name="name">msg</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='w']/parameter[@name='p0']" name="name">tag</attr>
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='w']/parameter[@name='p1']" name="name">msg</attr>
+
+  
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyNotifier']/method[@name='getUpdatePoints']/parameter[@name='p0']" name="name">currencyName</attr>
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyNotifier']/method[@name='getUpdatePoints']/parameter[@name='p1']" name="name">pointTotal</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyNotifier']/method[@name='getUpdatePointsFailed']/parameter[@name='p0']" name="name">error</attr>
+
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoySpendPointsNotifier']/method[@name='getSpendPointsResponse']/parameter[@name='p0']" name="name">currencyName</attr>
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoySpendPointsNotifier']/method[@name='getSpendPointsResponse']/parameter[@name='p1']" name="name">pointTotal</attr>
+  
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoySpendPointsNotifier']/method[@name='getSpendPointsResponseFailed']/parameter[@name='p0']" name="name">error</attr>
+
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyVideoNotifier']/method[@name='videoError']/parameter[@name='p0']" name="name">statusCode</attr>
+
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyViewNotifier']/method[@name='viewDidClose']/parameter[@name='p0']" name="name">viewType</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyViewNotifier']/method[@name='viewDidOpen']/parameter[@name='p0']" name="name">viewType</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyViewNotifier']/method[@name='viewWillClose']/parameter[@name='p0']" name="name">viewType</attr>
+
+  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyViewNotifier']/method[@name='viewWillOpen']/parameter[@name='p0']" name="name">viewType</attr>
+
 </metadata>
