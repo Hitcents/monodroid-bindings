@@ -6,15 +6,12 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 //using SamsungChord;
-using SamsungIAP;
-using Com.Sec.Android.AD;
-using Com.Sec.Android.Tracking;
-using Com.Ormma.Controller.Util;
+using Com.Testflightapp.Lib;
 
 namespace TestApplication
 {
     [Activity(Label = "TestApplication", MainLauncher = true, Icon = "@drawable/icon")]
-    public class Activity1 : Activity, IAPServiceCallback, IAPConnector
+    public class Activity1 : Activity
     {
 
         protected override void OnCreate(Bundle bundle)
@@ -23,6 +20,7 @@ namespace TestApplication
             //var manager = ChordManager.GetInstance(this);
             //var d = manager.AvailableInterfaceTypes;
             // Set our view from the "main" layout resource
+            TestFlight.TakeOff(Application, "herp de derp");
             SetContentView(Resource.Layout.Main);
         }
 
@@ -37,26 +35,6 @@ namespace TestApplication
         }
 
         public Bundle Init(int mode)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool RequestCmd(IAPServiceCallback callback, Bundle bundle)
-        {
-            throw new NotImplementedException();
-        }
-
-        public bool UnregisterCallback(IAPServiceCallback callback)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IBinder AsBinder()
-        {
-            throw new NotImplementedException();
-        }
-
-        public void ResponseCallback(Bundle bundle)
         {
             throw new NotImplementedException();
         }
