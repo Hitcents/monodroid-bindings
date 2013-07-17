@@ -122,7 +122,20 @@
 
   <attr path="/api/package[@name='com.google.android.gms.appstate']/class[@name='AppStateBuffer']/method[@name='get']" name="managedReturn">Java.Lang.Object</attr>
 
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/interface[@name='RealTimeMessageReceivedListener']/method[@name='onRealTimeMessageReceived']/parameter[@name='p0']" name="name">message</attr>
 
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/interface[@name='RealTimeReliableMessageSentListener']/method[@name='onRealTimeMessageSent']/parameter[@name='p0']" name="name">statusCode</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/interface[@name='RealTimeReliableMessageSentListener']/method[@name='onRealTimeMessageSent']/parameter[@name='p1']" name="name">tokenId</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/interface[@name='RealTimeReliableMessageSentListener']/method[@name='onRealTimeMessageSent']/parameter[@name='p2']" name="name">recipientParticipantId</attr>
 
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RealTimeMessage']/constructor[@name='RealTimeMessage']/parameter[@name='p0']" name="name">senderId</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RealTimeMessage']/constructor[@name='RealTimeMessage']/parameter[@name='p1']" name="name">message</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RealTimeMessage']/constructor[@name='RealTimeMessage']/parameter[@name='p2']" name="name">messageId</attr>
 
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RoomConfigBuilder']/method[@name='builder']/parameter[@name='p0']" name="name">listener</attr>
+  
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RoomConfig']/method[@name='createAutoMatchCriteria']/parameter[@name='p0']" name="name">minAutoMatchPlayers</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RoomConfig']/method[@name='createAutoMatchCriteria']/parameter[@name='p1']" name="name">maxAutoMatchPlayers</attr>
+  <attr path="/api/package[@name='com.google.android.gms.games.multiplayer.realtime']/class[@name='RoomConfig']/method[@name='createAutoMatchCriteria']/parameter[@name='p2']" name="name">exclusiveBitMask</attr>
+  
 </metadata>
