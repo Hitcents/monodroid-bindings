@@ -40,18 +40,21 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <LibraryProjectProperties Include="..\..\..\..\AppData\Local\Android\android-sdk\extras\google\google_play_services\libproject\google-play-services_lib\project.properties">
+      <Link>project.properties</Link>
+    </LibraryProjectProperties>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
+    <LibraryProjectZip Include="Jars\GooglePlayService.zip" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml">
       <SubType>Designer</SubType>
     </TransformFile>
     <TransformFile Include="Transforms\EnumFields.xml" />
-    <TransformFile Include="Transforms\EnumMethods.xml" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedJar Include="Jars\google-play-services.jar" />
+    <TransformFile Include="Transforms\EnumMethods.xml">
+      <SubType>Designer</SubType>
+    </TransformFile>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
