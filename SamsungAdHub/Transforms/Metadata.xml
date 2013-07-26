@@ -8,6 +8,9 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
 
+  <attr path="/api/package[@name='com.sec.android.ad']" name="managedName">Adhub.Ad</attr>
+  <attr path="/api/package[@name='com.sec.android.ad.info']" name="managedName">Adhub.Ad.Info</attr>
+  <attr path="/api/package[@name='com.sec.android.tracking']" name="managedName">Adhub.Tracking</attr>
 
   <remove-node path="/api/package[@name='com.sec.android.ad.container']/class[@name='AdCarousel']" />
   <remove-node path="/api/package[@name='com.sec.android.ad.container']/class[@name='AdText']" />
