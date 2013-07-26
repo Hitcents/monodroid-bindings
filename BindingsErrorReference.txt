@@ -1,0 +1,10 @@
+The type or namespace name 'ClassName' does not exist in the namespace 'Namespace' (are you missing an assembly reference?)
+	- Visiblity of class not set to public
+	- <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMLayout']" name="visibility">public</attr>
+	
+/xPath/: return type must be 'type' to match overridden member 'xPath'
+	- <attr path="/xPath/" name="managedReturn"> type </attr>
+	
+/xPath/ does not implement inherited abstract member /xPath/ + /method/ + /parameter types/
+	- change managedType on method parameters to match second xPath in error
+	

@@ -1,0 +1,57 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.testflightapp']" name="managedName">TestFlight</attr>
+
+  <remove-node path="/api/package[@name='org.msgpack.template.builder']/class[@name='ReflectionBeansTemplateBuilder']" />
+  <remove-node path="/api/package[@name='org.msgpack.template.builder']/class[@name='ReflectionTemplateBuilder']" />
+  <!--<attr path="/api/package[@name='org.msgpack.template.builder']/class[@name='ReflectionBeansTemplateBuilder.ReflectionBeansFieldTemplate']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.template.builder']/class[@name='ReflectionBeansTemplateBuilder.ReflectionBeansFieldTemplate']/constructor[@name='ReflectionBeansTemplateBuilder.ReflectionBeansFieldTemplate']" name="visibility">public</attr>-->
+
+  <attr path="/api/package[@name='org.msgpack.io']/class[@name='AbstractInput']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.type']/class[@name='AbstractValue']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.io']/class[@name='BufferedOutput']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.testflightapp.lib.core.newapi']/class[@name='SchedulerAwareJob']" name="visibility">public</attr>
+
+
+
+  <!--<attr path="/api/package[@name='org.msgpack.packer']/class[@name='AbstractPacker']/method[@name='writeBigInteger']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.util.json']/class[@name='JSONPacker']/method[@name='writeBigInteger' and count(parameter)=1 and parameter[1][@type='java.math.BigInteger']]" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='MessagePackPacker']/method[@name='writeBigInteger' and count(parameter)=1 and parameter[1][@type='java.math.BigInteger']]" name="visibility">public</attr>
+  
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='AbstractPacker']/method[@name='writeBoolean']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='MessagePackPacker']/method[@name='writeBoolean' and count(parameter)=1 and parameter[1][@type='boolean']]" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.util.json']/class[@name='JSONPacker']/method[@name='writeBoolean' and count(parameter)=1 and parameter[1][@type='boolean']]" name="visibility">public</attr>
+  
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='AbstractPacker']/method[@name='writeByte']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='byte']]" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.util.json']/class[@name='JSONPacker']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='byte']]" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='AbstractPacker']/method[@name='writeByteArray']" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.util.json']/class[@name='JSONPacker']/method[@name='writeByteArray' and count(parameter)=1 and parameter[1][@type='java.math.BigInteger']]" name="visibility">public</attr>
+  <attr path="/api/package[@name='org.msgpack.util.json']/class[@name='JSONPacker']/method[@name='writeByteArray' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="visibility">public</attr>-->
+
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeBigInteger' and count(parameter)=1 and parameter[1][@type='java.math.BigInteger']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeDouble' and count(parameter)=1 and parameter[1][@type='double']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeBoolean' and count(parameter)=1 and parameter[1][@type='boolean']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeByte' and count(parameter)=1 and parameter[1][@type='byte']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeByteArray' and count(parameter)=3 and parameter[1][@type='byte[]'] and parameter[2][@type='int'] and parameter[3][@type='int']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeByteBuffer' and count(parameter)=1 and parameter[1][@type='java.nio.ByteBuffer']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeFloat' and count(parameter)=1 and parameter[1][@type='float']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeInt' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeLong' and count(parameter)=1 and parameter[1][@type='long']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeShort' and count(parameter)=1 and parameter[1][@type='short']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.packer']/class[@name='Unconverter']/method[@name='writeString' and count(parameter)=1 and parameter[1][@type='java.lang.String']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='org.msgpack.unpacker']/class[@name='Converter']/method[@name='tryReadNil' and count(parameter)=0]" name="visibility">protected</attr>
+
+  <!--<remove-node path="/api/package[@name='java.util']/interface[@name='IIterator']/method[@name'next']"/>-->
+  <remove-node path="/api/package[@name='org.msgpack.unpacker']/class[@name='UnpackerIterator']" />
+  
+  
+</metadata>

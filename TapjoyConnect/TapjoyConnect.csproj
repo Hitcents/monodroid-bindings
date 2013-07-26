@@ -12,7 +12,7 @@
     <RootNamespace>TapjoyConnect</RootNamespace>
     <AssemblyName>TapjoyConnect</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <TargetFrameworkVersion>v2.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>

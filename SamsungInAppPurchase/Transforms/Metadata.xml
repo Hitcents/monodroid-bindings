@@ -32,5 +32,10 @@
 
 
   <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPServiceCallback']/method[@name='responseCallback']/parameter[@name='p0']" name="name">bundle</attr>
+
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPConnector']" name="managedName">IIAPConnector</attr>
   
+  <attr path="/api/package[@name='com.sec.android.iap']/interface[@name='IAPServiceCallback']" name="managedName">IIAPServiceCallback</attr>
+
+
 </metadata>

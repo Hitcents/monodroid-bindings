@@ -1,0 +1,59 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.millennialmedia.android']" name="managedName">MillennialMedia</attr>
+
+  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMLayout']" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMAdImpl']" name="visibility">public</attr>
+
+  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='AdProperties']" name="visibility">public</attr>
+
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='TypeAdapters.EnumTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonWriter'] and parameter[2][@type='java.lang.Object']]"/>
+  
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='CollectionTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='DateTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='SqlDateTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  
+  <!--<attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='DateTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]/parameter[@name='p0]" name="type">JsonWriter</attr>-->
+
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal']/class[@name='LinkedHashTreeMap']"/>
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson']/class[@name='JsonStreamParser']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='TimeTypeAdapter']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='TimeTypeAdapter']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='SqlDateTypeAdapter']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='DateTypeAdapter']" />
+
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">System.Collections.IDictionary</attr>
+
+  <!--
+  
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='TimeTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+    <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='CollectionTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='DateTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='SqlDateTypeAdapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  
+  
+  <attr path="/api/package[@name='com.millennialmedia.google.gson']/class[@name='JsonStreamParser']/method[@name='next' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
+  
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='TimeTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonWriter'] and parameter[2][@type='java.sql.Time']]/parameter[@name='p1']" name="managedType">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='SqlDateTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonWriter'] and parameter[2][@type='java.sql.Date']]/parameter[@name='p1']" name="managedType">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='DateTypeAdapter']/method[@name='write' and count(parameter)=2 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonWriter'] and parameter[2][@type='java.util.Date']]/parameter[@name='p1']" name="managedType">Java.Lang.Object</attr>-->
+
+  <!--<attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">Java.Lang.Object</attr>
+  <attr path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory.Adapter']/method[@name='read' and count(parameter)=1 and parameter[1][@type='com.millennialmedia.google.gson.stream.JsonReader']]" name="managedReturn">System.Collections.IDictionary</attr>-->
+
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='CollectionTypeAdapterFactory']" />
+
+</metadata>
