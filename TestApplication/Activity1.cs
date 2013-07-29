@@ -9,6 +9,7 @@ using Android.OS;
 //using Com.Testflightapp.Lib;
 using Adhub.Ad;
 using MillennialMedia;
+using Com.Facebook;
 
 namespace TestApplication
 {
@@ -30,20 +31,23 @@ namespace TestApplication
             ad.SetListener(this);
             ad.Init(this, "", Com.Sec.Android.AD.Info.AdSize.Banner);*/
 
-
             #region MillennialMedia Advert Code
-            var mmad = FindViewById<RelativeLayout>(Resource.Id.MMAdLayout);
-            var adView = new MMAdView(this);
-            adView.Apid = "129242";
+            //var mmad = FindViewById<RelativeLayout>(Resource.Id.MMAdLayout);
+            var adView = FindViewById<MMAdView>(Resource.Id.adView);
 
             MMRequest request = new MMRequest();
-            //Metadata
             adView.MMRequest = request;
             adView.Id = MMSDK.DefaultAdId;
-            var layoutParams =new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WrapContent, RelativeLayout.LayoutParams.WrapContent);
-            layoutParams.AddRule(LayoutRules.CenterHorizontal);
-            mmad.AddView(adView, layoutParams);
-            adView.Invalidate();
+
+
+            //var layoutParams =new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.FillParent, RelativeLayout.LayoutParams.WrapContent);
+            //layoutParams.AddRule(LayoutRules.CenterHorizontal);
+            //adView.LayoutParameters = layoutParams;
+            //mmad.AddView(adView);
+
+
+
+            var derp = adView.Parent;
             adView.GetAd();
             #endregion
 
@@ -52,7 +56,7 @@ namespace TestApplication
             var samsungAd = FindViewById<AdHubView>(Resource.Id.AdLayout);
             samsungAd.Init(this, "xv0d0000000230", Com.Sec.Android.AD.Info.AdSize.Banner);
             samsungAd.StartAd();
-             * */
+             */
             #endregion
         }
     }

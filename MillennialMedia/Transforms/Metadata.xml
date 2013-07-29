@@ -56,4 +56,7 @@
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='MapTypeAdapterFactory']" />
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']/class[@name='CollectionTypeAdapterFactory']" />
 
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.stream']/class[@name='JsonReader']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.google.gson.stream']/class[@name='JsonWriter']" />
+
 </metadata>

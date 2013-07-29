@@ -21,6 +21,9 @@
     <implements name="java.util.Collection" name-generic-aware="java.util.Collection&lt;T&gt;" />
   </add-node>
 
+  <remove-node path="/api/package[@name='com.facebook.internal']/class[@name='Utility']/method[@name='closeQuietly']" />
+  
+  
   <!-- These are hacky, but without them couple of classes fail to be bound -->
   <!-- FIXME: it is rejected at javac, so it's not an option -->
   <remove-node path="/api/package[@name='com.facebook.widget']/interface[@name='GraphObjectAdapter.DataNeededListener']" />

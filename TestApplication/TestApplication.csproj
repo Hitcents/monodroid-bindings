@@ -41,17 +41,18 @@
     <WarningLevel>4</WarningLevel>
     <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
     <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <AndroidLinkSkip />
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <BundleAssemblies>True</BundleAssemblies>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="MillennialMedia">
-      <HintPath>..\..\..\..\Desktop\C#\BattlePillars\Code\HitcentsGameEngine\Dependencies\MillennialMedia\MillennialMedia.dll</HintPath>
+    <Reference Include="MillennialMedia, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\MillennialMedia\bin\Release\MillennialMedia.dll</HintPath>
     </Reference>
     <Reference Include="Mono.Android" />
     <Reference Include="Mono.Android.Support.v4" />
     <Reference Include="mscorlib" />
-    <Reference Include="SamsungAdHub">
-      <HintPath>..\..\..\..\Desktop\C#\BattlePillars\Code\HitcentsGameEngine\Dependencies\Samsung\SamsungAdHub.dll</HintPath>
-    </Reference>
     <Reference Include="SamsungInAppPurchase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\SamsungInAppPurchase\bin\Debug\SamsungInAppPurchase.dll</HintPath>
@@ -61,7 +62,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
     <Reference Include="TestFlight">
-      <HintPath>..\TestFlight\bin\Debug\TestFlight.dll</HintPath>
+      <HintPath>..\TestFlight\obj\Release\TestFlight.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -83,9 +84,45 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\AmazonBilling\AmazonBilling.csproj">
+      <Project>{f8541faa-e0c7-406e-a11d-4cd7e8c69bbf}</Project>
+      <Name>AmazonBilling</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Facebook\Facebook.csproj">
+      <Project>{49ce3648-7a6c-4c66-9d66-ddfe3c96cf54}</Project>
+      <Name>Facebook</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleAdMob\GoogleAdMob.csproj">
+      <Project>{d6827f85-b9c3-48ad-968d-53d1c259e5e7}</Project>
+      <Name>GoogleAdMob</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleAnalytics\GoogleAnalytics.csproj">
+      <Project>{6f4eb0f9-34ee-4db8-a4e0-ca85c10768e3}</Project>
+      <Name>GoogleAnalytics</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GooglePlayBilling\GooglePlayBilling.csproj">
+      <Project>{18df94f0-cb59-4416-a247-8de82e80b542}</Project>
+      <Name>GooglePlayBilling</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GooglePlayServices\GooglePlayServices.csproj">
-      <Project>{FCCAF939-0B17-44DC-99F4-883593EAC019}</Project>
+      <Project>{fccaf939-0b17-44dc-99f4-883593eac019}</Project>
       <Name>GooglePlayServices</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SamsungAdHub\SamsungAdHub.csproj">
+      <Project>{64fcc200-c9bd-4637-bbaa-c58ae64fd7a7}</Project>
+      <Name>SamsungAdHub</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SamsungChord\SamsungChord.csproj">
+      <Project>{4ec38e57-b2f2-42c7-8a8c-af62ec114408}</Project>
+      <Name>SamsungChord</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SamsungInAppPurchase\SamsungIAP.csproj">
+      <Project>{4e4e227f-affa-48ae-9c21-079771c30015}</Project>
+      <Name>SamsungIAP</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\TapjoyConnect\TapjoyConnect.csproj">
+      <Project>{ce2fcc06-db0f-4b7a-82d9-0f6bf46bf2a5}</Project>
+      <Name>TapjoyConnect</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
