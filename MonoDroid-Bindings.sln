@@ -23,12 +23,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SamsungAdHub", "SamsungAdHu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GooglePlayServices", "GooglePlayServices\GooglePlayServices.csproj", "{FCCAF939-0B17-44DC-99F4-883593EAC019}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BaseGameUtils", "BaseGameUtils\BaseGameUtils.csproj", "{E18452D5-8411-4B27-A6D9-7D78EFF2452C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureNotificationHub", "AzureNotificationHub\AzureNotificationHub.csproj", "{85788ACB-3A19-4C20-AC99-58D1F1C61036}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestFlight", "TestFlight\TestFlight.csproj", "{0D3996C3-07A6-41CB-91E5-2E9651DC33F5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillennialMedia", "MillennialMedia\MillennialMedia.csproj", "{9C1C8C94-64FC-47C5-A237-ACDE9F593F16}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPenBinding", "SPenBinding\SPenBinding.csproj", "{D35F7C22-C061-423B-8BED-7A476E0F652A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -82,10 +83,6 @@ Global
 		{FCCAF939-0B17-44DC-99F4-883593EAC019}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FCCAF939-0B17-44DC-99F4-883593EAC019}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FCCAF939-0B17-44DC-99F4-883593EAC019}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E18452D5-8411-4B27-A6D9-7D78EFF2452C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E18452D5-8411-4B27-A6D9-7D78EFF2452C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E18452D5-8411-4B27-A6D9-7D78EFF2452C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E18452D5-8411-4B27-A6D9-7D78EFF2452C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{85788ACB-3A19-4C20-AC99-58D1F1C61036}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{85788ACB-3A19-4C20-AC99-58D1F1C61036}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{85788ACB-3A19-4C20-AC99-58D1F1C61036}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -98,6 +95,10 @@ Global
 		{9C1C8C94-64FC-47C5-A237-ACDE9F593F16}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9C1C8C94-64FC-47C5-A237-ACDE9F593F16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9C1C8C94-64FC-47C5-A237-ACDE9F593F16}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
