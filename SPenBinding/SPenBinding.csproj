@@ -42,10 +42,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <EmbeddedNativeLibrary Include="libs\armeabi\libCBJni.so" />
     <EmbeddedNativeLibrary Include="libs\armeabi\libHSV.so" />
-    <EmbeddedNativeLibrary Include="libs\armeabi\libSPenGesture.so" />
-    <EmbeddedNativeLibrary Include="libs\armeabi\libSPenSDKImageFilling.so" />
     <EmbeddedNativeLibrary Include="libs\armeabi\libSPenSDKImageFilterLibs.so" />
   </ItemGroup>
   <ItemGroup>
@@ -54,10 +51,10 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\libspen23.jar" />
+    <EmbeddedJar Include="Jars\libspen22.jar" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\libspen23_multiwindow.jar" />
+    <InputJar Include="Jars\libspen22_multiwindow.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

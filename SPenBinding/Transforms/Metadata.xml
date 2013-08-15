@@ -6,4 +6,24 @@
   This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
+
+  <remove-node path="/api/package[@name='android.sec.multiwindow']/interface[@name='IMultiWindowManager']" />
+  <remove-node path="/api/package[@name='com.samsung.spensdk.applistener']/interface[@name='FileProcessListener']" />
+  <remove-node path="/api/package[@name='com.samsung.sdraw']/class[@name='AbstractSettingView']" />
+  <remove-node path="/api/package[@name='android.sec.multiwindow']/class[@name='MultiWindow']/constructor[@name='MultiWindow' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.sec.multiwindow.IMultiWindowService'] and parameter[3][@type='android.content.ComponentName']]" />
+  <remove-node path="/api/package[@name='android.sec.multiwindow']/class[@name='MultiWindow']/constructor[@name='MultiWindow' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='android.sec.multiwindow.IMultiWindowService'] and parameter[3][@type='android.content.Intent']]" />
+  <remove-node path="/api/package[@name='com.samsung.sdraw']/class[@name='MemoDataUtils']/constructor[@name='MemoDataUtils' and count(parameter)=1 and parameter[1][@type='com.samsung.sdraw.AbstractModeContext']]"/>
+
+  <!--Two events with same setOn______Listener name-->
+  <attr path="/api/package[@name='com.samsung.spensdk.applistener']/interface[@name='SCanvasLongPressListener']/method[@name='onLongPressed' and count(parameter)=2 and parameter[1][@type='float'] and parameter[2][@type='float']]" name="name">OnLongPressed2</attr>
+  <attr path="/api/package[@name='com.samsung.sdraw']/interface[@name='CanvasView.OnLongPressListener']/method[@name='onLongPress' and count(parameter)=2 and parameter[1][@type='float'] and parameter[2][@type='float']]" name="name">OnLongPress2</attr>
+
+  <remove-node path="/api/package[@name='com.samsung.sdraw']/class[@name='CanvasView']/method[@name='setInitializeFinishListener' and count(parameter)=1 and parameter[1][@type='com.samsung.sdraw.CanvasView.InitializeFinishListener']]" />
+
+  <attr path="/api/package[@name='com.samsung.samm.common']/class[@name='SObjectText']/method[@name='setStyle' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='com.samsung.samm.common']/class[@name='SObjectStroke']/method[@name='setStyle' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">protected</attr>
+
+  <attr path="/api/package[@name='com.samsung.samm.common']/class[@name='SObjectImage']/method[@name='setStyle' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">protected</attr>
+  <attr path="/api/package[@name='com.samsung.samm.common']/class[@name='SObjectFilling']/method[@name='setStyle' and count(parameter)=1 and parameter[1][@type='int']]" name="visibility">protected</attr>
+
 </metadata>
