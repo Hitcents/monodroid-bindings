@@ -54,6 +54,9 @@
   <ItemGroup>
     <EmbeddedJar Include="Jars\MMSDK.jar" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedReferenceJar Include="Jars\nmdp_speech_kit.jar" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
