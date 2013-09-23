@@ -45,7 +45,7 @@
   <ItemGroup>
     <None Include="Jars\AboutJars.txt" />
     <None Include="Additions\AboutAdditions.txt" />
-    <LibraryProjectZip Include="Jars\facebook_3.0.1.zip" />
+    <LibraryProjectZip Include="Jars\facebook_3.5.zip" />
   </ItemGroup>
   <ItemGroup>
     <TransformFile Include="Transforms\Metadata.xml" />

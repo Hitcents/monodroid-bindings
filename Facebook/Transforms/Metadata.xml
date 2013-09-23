@@ -39,4 +39,6 @@
   <attr path="/api/package[@name='com.facebook']/class[@name='RequestBatch']/method[@name='remove']" name="return">java.lang.Object</attr>
 
   <attr path="/api/package[@name='com.facebook.widget']/class[@name='GraphObjectAdapter.SectionAndItem']/method[@name='getType']" name="managedName">getSectionItemType</attr>
+  <attr path="/api/package[@name='com.facebook.widget']/class[@name='FacebookDialog.OpenGraphActionDialogBuilder']/method[@name='setImageAttachmentsForAction']/parameter[@name='p0']" name="type">java.util.Collection&lt;java.lang.Object&gt;</attr>
+  <attr path="/api/package[@name='com.facebook.widget']/class[@name='FacebookDialog.OpenGraphActionDialogBuilder']/method[@name='setImageAttachmentsForObject']/parameter[@name='p1']" name="type">java.util.Collection&lt;java.lang.Object&gt;</attr>
 </metadata>
