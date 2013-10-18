@@ -24,9 +24,6 @@ namespace TestApplication
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-
-
-            
         }
     }
 }

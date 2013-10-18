@@ -23,7 +23,9 @@
   <!-- These are hacky, but without them couple of classes fail to be bound -->
   <!-- FIXME: it is rejected at javac, so it's not an option -->
   <remove-node path="/api/package[@name='com.facebook.widget']/interface[@name='GraphObjectAdapter.DataNeededListener']" />
-  <attr path="/api/package[@name='com.facebook.widget']/class[@name='WebDialog.FeedDialogBuilder']" name="static">false</attr>
+
+  <remove-node path="/api/package[@name='com.facebook.widget']/class[@name='WebDialog.FeedDialogBuilder']/constructor[@name='WebDialog.FeedDialogBuilder' and count(parameter)=3 and parameter[1][@type='com.facebook.widget.WebDialog'] and parameter[2][@type='android.content.Context'] and parameter[3][@type='com.facebook.Session']]/parameter[@name='__self']" />
+  <remove-node path="/api/package[@name='com.facebook.widget']/class[@name='WebDialog.FeedDialogBuilder']/constructor[@name='WebDialog.FeedDialogBuilder' and count(parameter)=4]/parameter[@name='__self']" />
 
   <attr path="/api/package[@name='com.facebook.widget']/class[@extends='com.facebook.widget.GraphObjectAdapter']" name="extends">android.widget.BaseAdapter&lt;T&gt;</attr>
   <attr path="/api/package[@name='com.facebook.widget']/class/field[@type='com.facebook.widget.GraphObjectAdapter']" name="type">android.widget.BaseAdapter</attr>
