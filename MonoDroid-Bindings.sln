@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonBilling", "AmazonBilling\AmazonBilling.csproj", "{F8541FAA-E0C7-406E-A11D-4CD7E8C69BBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAdMob", "GoogleAdMob\GoogleAdMob.csproj", "{D6827F85-B9C3-48AD-968D-53D1C259E5E7}"
