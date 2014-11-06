@@ -8,16 +8,12 @@
   -->
 
   <attr path="/api/package[@name='com.millennialmedia.android']" name="managedName">MillennialMedia</attr>
-  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMLayout']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMAdImpl']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='AdProperties']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMWebView']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMJSObject']" name="visibility">public</attr>
-  <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMWebViewClient.MMWebViewClientListener']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.millennialmedia.android']/class[@visibility='']" name="visibility">public</attr>
   <attr path="/api/package[@name='com.millennialmedia.android']/class[@name='MMException']/field[@name='INNER_EXCEPTION']" name="managedName">InnerExceptionId</attr>
+  <attr path="/api/package[@name='com.nuance.nmdp.speechkit']/class[@name='ResultsEventArgs']"/>
 
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='NVASpeechKit']/field[@name='_results']" />
-  <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.1']" />
+  <!--<remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.1']" />
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.2']" />
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.1']" />
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.2']" />
@@ -25,12 +21,11 @@
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.4']" />
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.5']" />
   <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.6']" />
-  <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.7']" />
+  <remove-node path="/api/package[@name='com.millennialmedia.android']/class[@name='MMSDK.Event.7']" />-->
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson']" />
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal']"/>
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.annotations']"/>
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.internal.bind']"/>
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.reflect']"/>
   <remove-node path="/api/package[@name='com.millennialmedia.google.gson.stream']"/>
-
 </metadata>
