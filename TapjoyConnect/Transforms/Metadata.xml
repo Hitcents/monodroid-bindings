@@ -12,6 +12,7 @@
   <remove-node path="/api/package[@name='com.turbomanage.httpclient']/class[@name='ParameterMap']" />
   <remove-node path="/api/package[@name='com.turbomanage.httpclient.android']/class[@name='DoHttpRequestTask']" />
   <remove-node path="/api/package[@name='com.threatmetrix.TrustDefenderMobile']/class[@name='JavaScriptInterface']" />
+  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnectCore']/method[@name='setVideoEnabled' and count(parameter)=1 and parameter[1][@type='boolean']]"/>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyCache.CacheAssetThread']/method[@name='call' and count(parameter)=0]" name="return">java.lang.Object</attr>
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponse']/parameter[@name='p0']" name="name">currencyName</attr>
