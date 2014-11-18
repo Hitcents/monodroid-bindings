@@ -72,7 +72,9 @@
     <AndroidResource Include="Resources\Drawable\Icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <TransformFile Include="Properties\AndroidManifest.xml" />
+    <TransformFile Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </TransformFile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MillennialMedia\MillennialMedia.csproj">
