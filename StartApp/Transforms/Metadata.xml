@@ -1,0 +1,21 @@
+<metadata>
+  
+  <attr path="/api/package[@name='com.startapp.android.publish']" name="managedName">Startapp</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.adinformation']" name="managedName">Startapp.AdInformation</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.banner']" name="managedName">Startapp.Banner</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.banner.banner3d']" name="managedName">Startapp.Banner.Banner3D</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.banner.bannerstandard']" name="managedName">Startapp.Banner.BannerStandard</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.list3d']" name="managedName">Startapp.List3D</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.model']" name="managedName">Startapp.Model</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.nativead']" name="managedName">Startapp.NativeAd</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.slider']" name="managedName">Startapp.Slider</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.slider.sliding']" name="managedName">Startapp.Slider.Sliding</attr>
+  <attr path="/api/package[@name='com.startapp.android.publish.splash']" name="managedName">Startapp.Splash</attr>
+  <remove-node path="/api/package[@name='com.startapp.android.publish.gson']" />
+  <remove-node path="/api/package[@name='com.startapp.android.publish.gson.internal']" />
+  <remove-node path="/api/package[@name='com.startapp.android.publish.gson.annotations']" />
+  <remove-node path="/api/package[@name='com.startapp.android.publish.gson.reflect']" />
+  <remove-node path="/api/package[@name='com.startapp.android.publish.gson.stream']" />
+  <remove-node path="/api/package[@name='com.startapp.android.publish.gson.internal.bind']" />
+  
+</metadata>

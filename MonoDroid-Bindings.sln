@@ -1,6 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonBilling", "AmazonBilling\AmazonBilling.csproj", "{F8541FAA-E0C7-406E-A11D-4CD7E8C69BBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAdMob", "GoogleAdMob\GoogleAdMob.csproj", "{D6827F85-B9C3-48AD-968D-53D1C259E5E7}"
@@ -30,6 +32,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MillennialMedia", "MillennialMedia\MillennialMedia.csproj", "{9C1C8C94-64FC-47C5-A237-ACDE9F593F16}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SPenBinding", "SPenBinding\SPenBinding.csproj", "{D35F7C22-C061-423B-8BED-7A476E0F652A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TalkingGame", "TalkingGame\TalkingGame.csproj", "{BAC6D4ED-86FC-4297-894C-E94DD08D6B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IJavaObjectEx", "IJavaObjectEx\IJavaObjectEx.csproj", "{CB380599-1DCD-4495-BE9D-754A9218DF9A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp", "StartApp\StartApp.csproj", "{6A26716B-622D-41A4-B318-C7DFC8BAEE24}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -99,6 +107,18 @@ Global
 		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D35F7C22-C061-423B-8BED-7A476E0F652A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAC6D4ED-86FC-4297-894C-E94DD08D6B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAC6D4ED-86FC-4297-894C-E94DD08D6B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAC6D4ED-86FC-4297-894C-E94DD08D6B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAC6D4ED-86FC-4297-894C-E94DD08D6B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB380599-1DCD-4495-BE9D-754A9218DF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB380599-1DCD-4495-BE9D-754A9218DF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB380599-1DCD-4495-BE9D-754A9218DF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB380599-1DCD-4495-BE9D-754A9218DF9A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

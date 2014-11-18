@@ -1,0 +1,5 @@
+<metadata>
+
+  <attr path="/api/package[@name='com.tendcloud.tenddata']" name="managedName">TalkingGame</attr>
+  
+</metadata>

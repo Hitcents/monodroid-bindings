@@ -7,34 +7,27 @@
   <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
   -->
   <attr path="/api/package[@name='com.tapjoy']" name="managedName">Tapjoy</attr>
-  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyDailyRewardAdWebView']" />
   <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyFullScreenAdWebView']" />
   <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyDisplayAd']" />
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/field[@name='TAPJOY_CONNECT']" name="managedName">TAPJOY_CONNECT</attr>
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyVideo']/field[@name='TAPJOY_VIDEO']" name="managedName">TAPJOY_VIDEO</attr>
+  <remove-node path="/api/package[@name='com.turbomanage.httpclient']/class[@name='ParameterMap']" />
+  <remove-node path="/api/package[@name='com.turbomanage.httpclient.android']/class[@name='DoHttpRequestTask']" />
+  <remove-node path="/api/package[@name='com.threatmetrix.TrustDefenderMobile']/class[@name='JavaScriptInterface']" />
+  <remove-node path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnectCore']/method[@name='setVideoEnabled' and count(parameter)=1 and parameter[1][@type='boolean']]"/>
 
+  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyCache.CacheAssetThread']/method[@name='call' and count(parameter)=0]" name="return">java.lang.Object</attr>
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponse']/parameter[@name='p0']" name="name">currencyName</attr>
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponse']/parameter[@name='p1']" name="name">pointTotal</attr>
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyAwardPointsNotifier']/method[@name='getAwardPointsResponseFailed']/parameter[@name='p0']" name="name">error</attr>
 
-  
+
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='actionComplete']/parameter[@name='p0']" name="name">actionID</attr>
-  
+
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='awardTapPoints']/parameter[@name='p0']" name="name">amount</attr>
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='awardTapPoints']/parameter[@name='p1']" name="name">notifier</attr>
-
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enableBannerAdAutoRefresh']/parameter[@name='p0']" name="name">shouldAutoRefresh</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enableLogging']/parameter[@name='p0']" name="name">enable</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enablePaidAppWithActionID']/parameter[@name='p0']" name="name">paidAppPayPerActionID</attr>
-
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='enableVideoCache']/parameter[@name='p0']" name="name">enable</attr>
-
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDailyRewardAd']/parameter[@name='p0']" name="name">notifier</attr>
-
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDailyRewardAdWithCurrencyID']/parameter[@name='p0']" name="name">currencyID</attr>
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDailyRewardAdWithCurrencyID']/parameter[@name='p1']" name="name">notifier</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDisplayAd']/parameter[@name='p0']" name="name">notifier</attr>
 
@@ -42,13 +35,11 @@
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getDisplayAdWithCurrencyID']/parameter[@name='p1']" name="name">notifier</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getFullScreenAd']/parameter[@name='p0']" name="name">notifier</attr>
-  
+
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getFullScreenAdWithCurrencyID']/parameter[@name='p0']" name="name">currencyID</attr>
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getFullScreenAdWithCurrencyID']/parameter[@name='p1']" name="name">notifier</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='getTapPoints']/parameter[@name='p0']" name="name">notifier</attr>
-
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='initVideoAd']/parameter[@name='p0']" name="name">notifier</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p0']" name="name">context</attr>
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='requestTapjoyConnect']/parameter[@name='p1']" name="name">appID</attr>
@@ -67,9 +58,6 @@
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setEarnedPointsNotifier']/parameter[@name='p0']" name="name">notifier</attr>
 
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setFlagKeyValue']/parameter[@name='p0']" name="name">key</attr>
-  <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setFlagKeyValue']/parameter[@name='p1']" name="name">value</attr>
-
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setTapjoyViewNotifier']/parameter[@name='p0']" name="name">notifier</attr>
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyConnect']/method[@name='setUserID']/parameter[@name='p0']" name="name">userID</attr>
@@ -86,8 +74,6 @@
 
 
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyFullScreenAdNotifier']/method[@name='getFullScreenAdResponseFailed']/parameter[@name='p0']" name="name">error</attr>
-  <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyFeaturedAppNotifier']/method[@name='getFeaturedAppResponse']/parameter[@name='p0']" name="name">featuredAppObject</attr>
-
 
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='d']/parameter[@name='p0']" name="name">tag</attr>
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='d']/parameter[@name='p1']" name="name">msg</attr>
@@ -106,7 +92,7 @@
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='w']/parameter[@name='p0']" name="name">tag</attr>
   <attr path="/api/package[@name='com.tapjoy']/class[@name='TapjoyLog']/method[@name='w']/parameter[@name='p1']" name="name">msg</attr>
 
-  
+
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyNotifier']/method[@name='getUpdatePoints']/parameter[@name='p0']" name="name">currencyName</attr>
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyNotifier']/method[@name='getUpdatePoints']/parameter[@name='p1']" name="name">pointTotal</attr>
 
@@ -115,7 +101,7 @@
 
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoySpendPointsNotifier']/method[@name='getSpendPointsResponse']/parameter[@name='p0']" name="name">currencyName</attr>
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoySpendPointsNotifier']/method[@name='getSpendPointsResponse']/parameter[@name='p1']" name="name">pointTotal</attr>
-  
+
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoySpendPointsNotifier']/method[@name='getSpendPointsResponseFailed']/parameter[@name='p0']" name="name">error</attr>
 
 
@@ -130,4 +116,7 @@
 
   <attr path="/api/package[@name='com.tapjoy']/interface[@name='TapjoyViewNotifier']/method[@name='viewWillOpen']/parameter[@name='p0']" name="name">viewType</attr>
 
+  <!--<attr path="/api/package[@name='com.turbomanage.httpclient']/class[@name='ParameterMap']/method[@name='values' and count(parameter)=0]" name="return">java.lang.Object</attr>
+  <attr path="/api/package[@name='com.turbomanage.httpclient']/class[@name='ParameterMap']/method[@name='remove' and count(parameter)=1 and parameter[1][@type='java.lang.Object']]" name="return">java.lang.Object</attr>
+  <attr path="/api/package[@name='com.turbomanage.httpclient']/class[@name='ParameterMap']/method[@name='put' and count(parameter)=2 and parameter[1][@type='java.lang.String'] and parameter[2][@type='java.lang.String']]" name="parameter">java.lang.Object</attr>-->
 </metadata>

@@ -51,7 +51,7 @@
     <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedJar Include="Jars\SamsungAdHub_AndroidSDK_V2.5.3.jar" />
+    <EmbeddedJar Include="Jars\SamsungAdHub_AndroidSDK_v3.0.0_global.jar" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

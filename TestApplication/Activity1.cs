@@ -7,53 +7,77 @@ using Android.Widget;
 using Android.OS;
 //using SamsungIAP;
 //using Com.Testflightapp.Lib;
-using Adhub.Ad;
+//using Adhub.Ad;
 using MillennialMedia;
+using Android.Util;
+//using Com.Facebook.Widget;
+//using Com.Facebook.Android;
+//using Com.Facebook.Internal;
+//using Com.Facebook.Model;
 
 namespace TestApplication
 {
     [Activity(Label = "TestApplication", MainLauncher = true, Icon = "@drawable/icon")]
     public class Activity1 : Activity
     {
+        private const int IAB_LEADERBOARD_WIDTH = 728,
+            IAB_LEADERBOARD_HEIGHT = 90,
+            MED_BANNER_WIDTH = 480,
+            MED_BANNER_HEIGHT = 60,
+            BANNER_AD_WIDTH = 320, 
+            BANNER_AD_HEIGHT = 50;
 
         protected override void OnCreate(Bundle bundle)
         {
             base.OnCreate(bundle);
-            MMSDK.Initialize(this);
-            //var manager = ChordManager.GetInstance(this);
-            //var d = manager.AvailableInterfaceTypes;
-            // Set our view from the "main" layout resource
-            //TestFlight.TakeOff(Application, "herp de derp");
             SetContentView(Resource.Layout.Main);
 
-            /*var ad = FindViewById<AdHubView>(Resource.Id.AdLayout);
-            ad.SetListener(this);
-            ad.Init(this, "", Com.Sec.Android.AD.Info.AdSize.Banner);*/
+            var layout = FindViewById<RelativeLayout>(Resource.Id.MMAdLayout);
 
-
-            #region MillennialMedia Advert Code
-            var mmad = FindViewById<RelativeLayout>(Resource.Id.MMAdLayout);
-            var adView = new MMAdView(this);
-            adView.Apid = "129242";
-
-            MMRequest request = new MMRequest();
-            //Metadata
+            var adView = FindViewById<MMAdView>(Resource.Id.adView);
+            
+            var request = new MMRequest();
             adView.MMRequest = request;
-            adView.Id = MMSDK.DefaultAdId;
-            var layoutParams =new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.WrapContent, RelativeLayout.LayoutParams.WrapContent);
-            layoutParams.AddRule(LayoutRules.CenterHorizontal);
-            mmad.AddView(adView, layoutParams);
-            adView.Invalidate();
-            adView.GetAd();
-            #endregion
 
-            #region Samsung Adhub Code
-            /*
-            var samsungAd = FindViewById<AdHubView>(Resource.Id.AdLayout);
-            samsungAd.Init(this, "xv0d0000000230", Com.Sec.Android.AD.Info.AdSize.Banner);
-            samsungAd.StartAd();
-             * */
-            #endregion
+            var width = BANNER_AD_WIDTH;
+            var height = BANNER_AD_HEIGHT;
+
+            if(CanFit(IAB_LEADERBOARD_HEIGHT))
+            {
+                width = IAB_LEADERBOARD_WIDTH;
+                height = IAB_LEADERBOARD_HEIGHT;
+            }
+            else if (CanFit(MED_BANNER_WIDTH))
+            {
+                width = MED_BANNER_WIDTH;
+                height = MED_BANNER_HEIGHT;
+            }
+
+            adView.SetWidth(width);
+            adView.SetHeight(height);
+
+            var layoutWidth = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, width, Resources.DisplayMetrics);
+            var layoutHeight = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, height, Resources.DisplayMetrics);
+
+            var layoutParams = new RelativeLayout.LayoutParams(layoutWidth, layoutHeight);
+
+            layoutParams.AddRule(LayoutRules.AlignParentTop);
+            layoutParams.AddRule(LayoutRules.CenterHorizontal);
+
+            adView.LayoutParameters = layoutParams;
+
+            layout.AddView(adView);
+
+            adView.GetAd();
+
+            
+        }
+
+        private bool CanFit(int adWidth)
+        {
+            var metrics = Resources.DisplayMetrics;
+            var adWidthPx = TypedValue.ApplyDimension(ComplexUnitType.Dip, adWidth, metrics);
+            return metrics.WidthPixels >= adWidthPx;
         }
     }
 }
