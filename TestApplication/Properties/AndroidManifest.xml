@@ -2,12 +2,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" android:installLocation="auto">
 	<uses-sdk />
 	<application>
-    <activity android:name="com.millennialmedia.android.MMActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"
-              android:configChanges="keyboardHidden|orientation|keyboard" />
-		<activity android:name="com.millennialmedia.android.VideoPlayer" android:configChanges="keyboardHidden|orientation|keyboard" />
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version" />
+    <meta-data android:name="com.crashlytics.ApiKey" android:value="635d51d14e570394a657bcc8bb9dc6fe8bd74dbb"/>
+    <activity android:name="com.mopub.mobileads.MoPubActivity" android:configChanges="keyboardHidden|orientation"/>
+    <activity android:name="com.mopub.mobileads.MraidActivity" android:configChanges="keyboardHidden|orientation"/>
+    <activity android:name="com.mopub.common.MoPubBrowser" android:configChanges="keyboardHidden|orientation"/>
+    <activity android:name="com.mopub.mobileads.MraidVideoPlayerActivity" android:configChanges="keyboardHidden|orientation"/>
 	</application>
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 </manifest>

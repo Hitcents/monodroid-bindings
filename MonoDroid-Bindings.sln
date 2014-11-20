@@ -1,8 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.30723.0
-MinimumVisualStudioVersion = 10.0.40219.1
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AmazonBilling", "AmazonBilling\AmazonBilling.csproj", "{F8541FAA-E0C7-406E-A11D-4CD7E8C69BBF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAdMob", "GoogleAdMob\GoogleAdMob.csproj", "{D6827F85-B9C3-48AD-968D-53D1C259E5E7}"
@@ -38,6 +36,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IJavaObjectEx", "IJavaObjectEx\IJavaObjectEx.csproj", "{CB380599-1DCD-4495-BE9D-754A9218DF9A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp", "StartApp\StartApp.csproj", "{6A26716B-622D-41A4-B318-C7DFC8BAEE24}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fabric", "Fabric\Fabric.csproj", "{AA581343-66F0-41B2-B648-7443084BDBB5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -119,6 +119,10 @@ Global
 		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6A26716B-622D-41A4-B318-C7DFC8BAEE24}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA581343-66F0-41B2-B648-7443084BDBB5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA581343-66F0-41B2-B648-7443084BDBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA581343-66F0-41B2-B648-7443084BDBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA581343-66F0-41B2-B648-7443084BDBB5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

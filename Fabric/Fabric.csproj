@@ -5,22 +5,16 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{DA664C54-1A2A-4DD5-8FE0-0CFFE8191547}</ProjectGuid>
-    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProjectGuid>{AA581343-66F0-41B2-B648-7443084BDBB5}</ProjectGuid>
+    <ProjectTypeGuids>{10368E6C-D01B-4462-8E8B-01FC667A7035};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestApplication</RootNamespace>
-    <AssemblyName>TestApplication</AssemblyName>
+    <RootNamespace>Fabric</RootNamespace>
+    <AssemblyName>Fabric</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <AndroidApplication>true</AndroidApplication>
-    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
-    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
-    <TargetFrameworkVersion>v4.0.3</TargetFrameworkVersion>
-    <AndroidSupportedAbis>armeabi%3barmeabi-v7a%3bx86</AndroidSupportedAbis>
-    <AndroidStoreUncompressedFileExtensions />
-    <MandroidI18n />
-    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <AndroidUseLatestPlatformSdk />
+    <AndroidUseLatestPlatformSdk>
+    </AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v2.3</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,8 +24,6 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
-    <AndroidLinkMode>None</AndroidLinkMode>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -40,21 +32,13 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
-    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Fabric">
-      <HintPath>..\Fabric\bin\Debug\Fabric.dll</HintPath>
-    </Reference>
     <Reference Include="Mono.Android" />
-    <Reference Include="mscorlib" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="Xamarin.Android.Support.v13, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
+    <Reference Include="Xamarin.Android.Support.v13">
       <HintPath>..\packages\Xamarin.Android.Support.v13.20.0.0.4\lib\MonoAndroid32\Xamarin.Android.Support.v13.dll</HintPath>
     </Reference>
     <Reference Include="Xamarin.Android.Support.v4">
@@ -62,33 +46,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Activity1.cs" />
-    <Compile Include="Application.cs" />
-    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Additions\DownloadTask.cs" />
+    <Compile Include="Additions\VastVideoDownloadTask.cs" />
+    <Compile Include="Additions\VastXmlManagerAggregator.cs" />
+    <Compile Include="Additions\AdFetchTask.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="Resources\AboutResources.txt" />
-    <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Layout\Main.axml" />
+    <TransformFile Include="Transforms\Metadata.xml" />
+    <TransformFile Include="Transforms\EnumFields.xml" />
+    <TransformFile Include="Transforms\EnumMethods.xml" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Values\Strings.xml" />
+    <EmbeddedReferenceJar Include="Jars\io-fabric-sdk-android_fabric-classes.jar" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\Drawable\Icon.png" />
+    <EmbeddedJar Include="Jars\com-mopub-sdk-android_mopub-classes.jar" />
   </ItemGroup>
-  <ItemGroup>
-    <TransformFile Include="Properties\AndroidManifest.xml">
-      <SubType>Designer</SubType>
-    </TransformFile>
-  </ItemGroup>
-  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-     Other similar extension points exist, see Microsoft.Common.targets.
+       Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
   <Target Name="AfterBuild">

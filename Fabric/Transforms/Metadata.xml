@@ -1,0 +1,43 @@
+<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  -->
+
+  <attr path="/api/package[@name='com.mopub.nativeads']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.nativeads.factories']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.common']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.common.event']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.common.factories']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.common.logging']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.common.util']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads.factories']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads.resource']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads.util']" name="managedName">MoPub</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads.util.vast']" name="managedName">MoPub</attr>
+  
+  <attr path="/api/package[@name='com.mopub.nativeads']/class[@name='BaseForwardingNativeAd']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='BaseInterstitialActivity']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='BaseVideoPlayerActivity']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='BaseVideoViewController']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='MraidProperty']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads']/class[@name='ResponseBodyInterstitial']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.mobileads.util.vast']/class[@name='VastXmlManager']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.nativeads']/interface[@name='NativeAdInterface']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.nativeads']/class[@name='SpinningProgressView']" name="visibility">public</attr>
+  <attr path="/api/package[@name='com.mopub.common']/class[@name='MoPub']/method[@name='doInBackground' and count(parameter)=0]" name="managedReturn">Java.Lang.Object</attr>
+  
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/class[@name='ResponseBodyInterstitial']/method[@name='showInterstitial' and count(parameter)=0]"/>
+  <remove-node path="/api/package[@name='com.mopub.common.event']/interface[@name='TimedEvent.Listener']" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[@name='CustomEventInterstitialAdapter.CustomEventInterstitialAdapterListener']" />
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/interface[@name='CustomEventNative.CustomEventNativeListener']" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[@name='HtmlInterstitialWebView.MoPubUriJavascriptFireFinishLoadListener']" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[@name='BaseVideoViewController.BaseVideoViewControllerListener']" />
+  <remove-node path="/api/package[@name='com.mopub.nativeads']/interface[@name='BaseForwardingNativeAd.NativeEventListener']" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads']/interface[@name='ViewGestureDetector.UserClickListener']" />
+  <remove-node path="/api/package[@name='com.mopub.mobileads.util.vast']/interface[@name='VastXmlManagerAggregator.VastXmlManagerAggregatorListener']" />
+</metadata>

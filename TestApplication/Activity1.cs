@@ -8,8 +8,9 @@ using Android.OS;
 //using SamsungIAP;
 //using Com.Testflightapp.Lib;
 //using Adhub.Ad;
-using MillennialMedia;
+//using MillennialMedia;
 using Android.Util;
+using MoPub;
 //using Com.Facebook.Widget;
 //using Com.Facebook.Android;
 //using Com.Facebook.Internal;
@@ -26,6 +27,9 @@ namespace TestApplication
             MED_BANNER_HEIGHT = 60,
             BANNER_AD_WIDTH = 320, 
             BANNER_AD_HEIGHT = 50;
+        // TODO: Replace this test id with your personal ad unit id
+	    private const string MOPUB_BANNER_AD_UNIT_ID = "d4a0aba637d64a9f9a05a575fa757ac2";
+	    private MoPubView _moPubView;
 
         protected override void OnCreate(Bundle bundle)
         {
@@ -34,43 +38,15 @@ namespace TestApplication
 
             var layout = FindViewById<RelativeLayout>(Resource.Id.MMAdLayout);
 
-            var adView = FindViewById<MMAdView>(Resource.Id.adView);
-            
-            var request = new MMRequest();
-            adView.MMRequest = request;
+            _moPubView = (MoPubView)FindViewById<MoPubView>(Resource.Id.adView);
+            _moPubView.AdUnitId = MOPUB_BANNER_AD_UNIT_ID;
+            _moPubView.LoadAd();
+        }
 
-            var width = BANNER_AD_WIDTH;
-            var height = BANNER_AD_HEIGHT;
-
-            if(CanFit(IAB_LEADERBOARD_HEIGHT))
-            {
-                width = IAB_LEADERBOARD_WIDTH;
-                height = IAB_LEADERBOARD_HEIGHT;
-            }
-            else if (CanFit(MED_BANNER_WIDTH))
-            {
-                width = MED_BANNER_WIDTH;
-                height = MED_BANNER_HEIGHT;
-            }
-
-            adView.SetWidth(width);
-            adView.SetHeight(height);
-
-            var layoutWidth = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, width, Resources.DisplayMetrics);
-            var layoutHeight = (int)TypedValue.ApplyDimension(ComplexUnitType.Dip, height, Resources.DisplayMetrics);
-
-            var layoutParams = new RelativeLayout.LayoutParams(layoutWidth, layoutHeight);
-
-            layoutParams.AddRule(LayoutRules.AlignParentTop);
-            layoutParams.AddRule(LayoutRules.CenterHorizontal);
-
-            adView.LayoutParameters = layoutParams;
-
-            layout.AddView(adView);
-
-            adView.GetAd();
-
-            
+        protected override void OnDestroy()
+        {
+            _moPubView.Destroy();
+            base.OnDestroy();
         }
 
         private bool CanFit(int adWidth)
