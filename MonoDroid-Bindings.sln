@@ -39,6 +39,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartApp", "StartApp\StartA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fabric", "Fabric\Fabric.csproj", "{AA581343-66F0-41B2-B648-7443084BDBB5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chartboost", "Chartboost\Chartboost.csproj", "{2A2A327F-3232-4A02-8433-19B32B9F8223}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -123,6 +125,10 @@ Global
 		{AA581343-66F0-41B2-B648-7443084BDBB5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA581343-66F0-41B2-B648-7443084BDBB5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA581343-66F0-41B2-B648-7443084BDBB5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
