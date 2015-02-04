@@ -41,6 +41,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fabric", "Fabric\Fabric.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Chartboost", "Chartboost\Chartboost.csproj", "{2A2A327F-3232-4A02-8433-19B32B9F8223}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnityAds", "UnityAds\UnityAds.csproj", "{E39F901B-B434-4C26-808D-F42E6B348252}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -129,6 +131,10 @@ Global
 		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A2A327F-3232-4A02-8433-19B32B9F8223}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E39F901B-B434-4C26-808D-F42E6B348252}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E39F901B-B434-4C26-808D-F42E6B348252}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E39F901B-B434-4C26-808D-F42E6B348252}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E39F901B-B434-4C26-808D-F42E6B348252}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

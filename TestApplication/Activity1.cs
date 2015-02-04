@@ -12,6 +12,7 @@ using Android.OS;
 using Android.Util;
 using Com.Chartboost.Sdk;
 using Android.Content.PM;
+using Com.Unity3d.Ads.Android;
 //using MoPub;
 //using Com.Facebook.Widget;
 //using Com.Facebook.Android;
@@ -32,11 +33,10 @@ namespace TestApplication
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.Main);
-
+            UnityAds.Init(this, "11001", (IUnityAdsListener)this);
             Chartboost.StartWithAppId(this, APP_ID, APP_SIGNATURE);
             Chartboost.LoggingLevel = Com.Chartboost.Sdk.Libraries.CBLogging.Level.All;
             Chartboost.SetDelegate(new ChartDelegate());
-
             Chartboost.OnCreate(this);
         }
 
